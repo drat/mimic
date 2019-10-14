@@ -1,0 +1,72 @@
+Janus commit: 3199b409af76261ae449aa2fe038f0faf369587b
+Compiled on:  Thu Oct 10 04:23:11 UTC 2019
+
+---------------------------------------------------
+  Starting Meetecho Janus (WebRTC Server) v0.7.5
+---------------------------------------------------
+
+Checking command line arguments...
+Debug/log level is 4
+Debug/log timestamps are disabled
+Debug/log colors are enabled
+Adding 'vmnet' to the ICE ignore list...
+Using 172.17.0.2 as local IP...
+[WARN] Token based authentication disabled
+Initializing recorder code
+Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, half-trickle, IPv6 support disabled)
+STUN server to use: stun.l.google.com:19302
+  >> 173.194.207.127:19302 (IPv4)
+Testing STUN server: message is of 20 bytes
+  >> Our public address is 18.235.63.230
+TURN REST API backend: (disabled)
+Crypto: OpenSSL pre-1.1.0
+[WARN] The libsrtp installation does not support AES-GCM profiles
+[WARN] No cert/key specified, autogenerating some...
+Fingerprint of our certificate: 2D:93:29:DE:F7:A5:78:DC:3D:7F:3E:4D:9C:DC:6B:AB:48:FD:D8:1B:9C:4B:7D:15:F6:B9:05:DD:E2:59:2C:BB
+[WARN] Data Channels support not compiled
+[WARN] Event handlers support disabled
+Plugins folder: /opt/janus/lib/janus/plugins
+Loading plugin 'libjanus_sip.so'...
+JANUS SIP plugin initialized!
+Joining Janus requests handler thread
+Sessions watchdog started
+Loading plugin 'libjanus_echotest.so'...
+JANUS EchoTest plugin initialized!
+Loading plugin 'libjanus_nosip.so'...
+JANUS NoSIP plugin initialized!
+Transport plugins folder: /opt/janus/lib/janus/transports
+Loading transport plugin 'libjanus_websockets.so'...
+[WARN] libwebsockets has been built without IPv6 support, will bind to IPv4 only
+libwebsockets logging: 0
+WebSockets server started (port 8188)...
+[WARN] Secure WebSockets server disabled
+[WARN] Admin WebSockets server disabled
+[WARN] Secure Admin WebSockets server disabled
+JANUS WebSockets transport plugin initialized!
+Loading transport plugin 'libjanus_http.so'...
+HTTP webserver started (port 8088, /janus path listener)...
+[WARN] HTTPS webserver disabled
+[WARN] Admin/monitor HTTP webserver disabled
+[WARN] Admin/monitor HTTPS webserver disabled
+JANUS REST (HTTP/HTTPS) transport plugin initialized!
+[WARN] libnice version outdated: 0.1.13 installed, at least 0.1.15 recommended
+WebSockets thread started
+
+
+Jansson libconfig libnice OpenSSL libsrtp usrsctp libmicrohttpd libwebsockets cmake rabbitmq-c paho.mqtt.c nanomsg libcurl
+
+
+
+
+
+
+:/home/ubuntu/.nvm/versions/node/v12.12.0/bin
+:/home/ubuntu/bin
+:/home/ubuntu/.local/bin
+:/usr/local/sbin:/usr/local/bin
+:/usr/sbin
+:/usr/bin:/sbin
+:/bin:/usr/games
+:/usr/local/games
+:/usr/local/ssl/bin
+:/snap/bin

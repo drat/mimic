@@ -1,0 +1,73 @@
+setup docker https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly
+
+install docker for windows
+
+JanusGateway from WebRTC.ventures
+https://github.com/agonza1/janus_gateway
+
+
+working with JG SIP
+
+https://webrtc.ventures/2017/10/janus-webrtc-gateway-as-a-sip-gateway-how-to-monitor-it/
+
+
+
+https://janus.conf.meetecho.com/docs/deploy.html
+
+
+
+testing it out on aws
+
+using stun 
+
+stun.l.google.com:19302
+
+installed docker and relavent Janus SIp Gateway git
+
+trying this, doing it on local is failing
+
+run cmd:
+
+docker run voxbone-janus -S stun.l.google.com:19302
+this "stun" server is working!
+
+sudo docker run -p 80:80 -p 7088:7088 -p 8088:8088 -p 8188:8188 -p 10000-10200:10000-10200/udp -t mcroth/docker-janus:latest -S stun.l.google.com:19302
+
+https://janus.conf.meetecho.com/docs/duktape.html
+
+
+
+
+-p 80:80 -p 7088:7088 -p 8088:8088 -p 8188:8188 -p 10000-10200:10000-10200/udp -S stun.l.google.com:19302
+
+sudo janus -S stun.l.google.com:19302 -L /home/ubuntu/mediaServer/janus-gateway/logs --nat-1-1=18.235.63.230 --rtp-port-range=8200-8250 --debug-level=7 --debug-timestamps  --apisecret=superSecret
+
+
+
+
+
+
+
+
+// Explore these flags --
+
+sudo apt-get install libmicrohttpd-dev libjansson-dev libnice-dev libssl-dev libsrtp-dev libsofia-sip-ua-dev libglib2.0-dev libopus-dev libogg-dev libini-config-dev libcollection-dev libwebsockets-dev pkg-config gengetopt automake libtool doxygen graphviz git cmake
+sudo apt-get install libavformat-dev
+
+mkdir -p ~/build
+cd ~/build
+git clone git://github.com/meetecho/janus-gateway.git
+
+
+cd janus-gateway
+sh autogen.sh
+
+./configure --disable-data-channels --disable-websockets --disable-rabbitmq --disable-docs --prefix=/opt/janus LDFLAGS="-L/usr/local/lib -Wl,-rpath=/usr/local/lib" CFLAGS="-I/usr/local/include"
+
+make && sudo make install
+sudo make configs
+Then :
+
+cd /opt/janus/bin/ 
+
+./janus -F /opt/janus/etc/janus/

@@ -1,0 +1,2 @@
+papers and research:
+https://github.com/YadiraF/face3d/blob/master/3D%20Face%20Papers.md
