@@ -40,7 +40,7 @@ https://janus.conf.meetecho.com/docs/duktape.html
 
 -p 80:80 -p 7088:7088 -p 8088:8088 -p 8188:8188 -p 10000-10200:10000-10200/udp -S stun.l.google.com:19302
 
-sudo janus -S stun.l.google.com:19302 -L /home/ubuntu/mediaServer/janus-gateway/logs --nat-1-1=18.235.63.230 --rtp-port-range=8200-8250 --debug-level=7 --debug-timestamps  --apisecret=superSecret
+sudo janus -S stun.l.google.com:19302 -L /home/ubuntu/mediaServer/janus-gateway/logs --nat-1-1=18.235.63.230 --rtp-port-range=8200-8250 --debug-level=7 --debug-timestamps  --apisecret=superSecret -p 80:80 -p 7088:7088 -p 8088:8088 -p 8188:8188 -p 10000-10200:10000-10200/udp
 
 
 

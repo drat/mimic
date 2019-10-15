@@ -1,5 +1,5 @@
-# angular-7-registration-login-example
+# mean-angular2-registration-login-example
 
-Angular 7 User Registration and Login Example with Webpack 4
+MEAN Stack with Angular 2 - User Registration and Login Example & Tutorial
 
-Full tutorial with example available at http://jasonwatmore.com/post/2018/10/29/angular-7-user-registration-and-login-example-tutorial
+For details and documentation go to http://jasonwatmore.com/post/2017/02/22/mean-with-angular-2-user-registration-and-login-example-tutorial

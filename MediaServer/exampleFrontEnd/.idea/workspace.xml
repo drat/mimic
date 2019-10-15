@@ -2,39 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1956b9d5-3405-4b94-8ad5-e56b090d9c90" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../WebApplication/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WebApplication/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WebApplication/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/frames.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/frames.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/frames.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/frames.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/info/notes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/src/app/_directives/alert.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/src/app/_directives/alert.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/src/app/_directives/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/src/app/_guards/auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/src/app/_guards/auth.guard.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/src/app/_helpers/error.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/src/app/_helpers/error.interceptor.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/src/app/_helpers/fake-backend.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/src/app/_helpers/fake-backend.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/src/app/_helpers/jwt.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/src/app/_helpers/jwt.interceptor.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/src/app/_models/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/src/app/_models/user.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/src/app/_services/alert.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/src/app/_services/alert.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/src/app/_services/authentication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/src/app/_services/authentication.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/src/app/_services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/src/app/_services/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WebApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WebApplication/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WebApplication/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WebApplication/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/notes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../WebApplication/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/src/app/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/src/app/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/src/app/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/src/app/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/src/app/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/src/app/register/register.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/src/app/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/src/app/register/register.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/webpack.config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,12 +85,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/frames.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+            <state relative-caret-position="510">
+              <caret line="27" column="51" selection-end-line="109" selection-end-column="7" />
               <folding>
+                <element signature="e#1156#1451#0" />
                 <element signature="n#script#8;n#head#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -154,13 +127,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../../fakre/faceit_live/faceit_live.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -260,7 +231,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="44" />
     <option name="y" value="204" />
     <option name="width" value="3026" />
@@ -360,7 +331,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="22" y="102" width="1513" height="973" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16082475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -526,21 +496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/frames.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-          <folding>
-            <element signature="n#script#8;n#head#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -573,9 +528,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../../fakre/faceit_live/faceit_live.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="30">
+          <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frames.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="27" column="51" selection-end-line="109" selection-end-column="7" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#1156#1451#0" />
+            <element signature="n#script#8;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
