@@ -70,3 +70,52 @@ Jansson libconfig libnice OpenSSL libsrtp usrsctp libmicrohttpd libwebsockets cm
 :/usr/local/games
 :/usr/local/ssl/bin
 :/snap/bin
+
+
+
+
+
+
+
+^CStopping server, please wait...
+[Tue Oct 15 02:37:11 2019] Ending sessions timeout watchdog...
+[Tue Oct 15 02:37:11 2019] Sessions watchdog stopped
+[Tue Oct 15 02:37:11 2019] Closing transport plugins:
+[Tue Oct 15 02:37:11 2019] Stopping webserver(s)...
+[Tue Oct 15 02:37:11 2019] JANUS REST (HTTP/HTTPS) transport plugin destroyed!
+[Tue Oct 15 02:37:11 2019] Nanomsg thread ended
+[Tue Oct 15 02:37:11 2019] JANUS Nanomsg transport plugin destroyed!
+[Tue Oct 15 02:37:11 2019] Ending requests thread...
+[Tue Oct 15 02:37:11 2019] Leaving Janus requests handler thread
+[Tue Oct 15 02:37:11 2019] Destroying sessions...
+[Tue Oct 15 02:37:11 2019] Freeing crypto resources...
+[Tue Oct 15 02:37:11 2019] De-initializing SCTP...
+[Tue Oct 15 02:37:11 2019] Closing plugins:
+[Tue Oct 15 02:37:11 2019] Leaving VoiceMail handler thread
+[Tue Oct 15 02:37:11 2019] JANUS VoiceMail plugin destroyed!
+[Tue Oct 15 02:37:11 2019] Leaving AudioBridge handler thread
+[Tue Oct 15 02:37:11 2019] Leaving mixer thread for room 1234 (Demo Room)...
+[Tue Oct 15 02:37:11 2019] JANUS AudioBridge plugin destroyed!
+[Tue Oct 15 02:37:11 2019] Leaving EchoTest handler thread
+[Tue Oct 15 02:37:11 2019] JANUS EchoTest plugin destroyed!
+[Tue Oct 15 02:37:11 2019] LeavingRecord&Play handler thread
+[Tue Oct 15 02:37:11 2019] JANUS Record&Play plugin destroyed!
+[Tue Oct 15 02:37:11 2019] Leaving TextRoom handler thread
+[Tue Oct 15 02:37:11 2019] JANUS TextRoom plugin destroyed!
+[Tue Oct 15 02:37:11 2019] Leaving VideoRoom handler thread
+[Tue Oct 15 02:37:11 2019] Leaving RTCP thread for RTP forwarders...
+[Tue Oct 15 02:37:11 2019] JANUS VideoRoom plugin destroyed!
+[Tue Oct 15 02:37:11 2019] Leaving Duktape scheduler thread
+[Tue Oct 15 02:37:11 2019] Leaving Duktape timer loop
+[Tue Oct 15 02:37:11 2019] [echotest.js]  Deinitialized
+[Tue Oct 15 02:37:11 2019] Janus JavaScript plugin (Duktape) destroyed!
+[Tue Oct 15 02:37:11 2019] Leaving VideoCall handler thread
+[Tue Oct 15 02:37:11 2019] JANUS VideoCall plugin destroyed!
+[Tue Oct 15 02:37:11 2019] Leaving NoSIP handler thread
+[Tue Oct 15 02:37:11 2019] JANUS NoSIP plugin destroyed!
+[Tue Oct 15 02:37:11 2019] Leaving Streaming handler thread
+[Tue Oct 15 02:37:11 2019] [gstreamer-sample] Interrupting mountpoint
+[Tue Oct 15 02:37:11 2019] [gstreamer-sample] Leaving streaming relay thread
+[Tue Oct 15 02:37:11 2019] [file-live-sample] Leaving filesource (live) thread
+[Tue Oct 15 02:37:11 2019] JANUS Streaming plugin destroyed!
+[Tue Oct 15 02:37:11 2019] Closing event handlers:

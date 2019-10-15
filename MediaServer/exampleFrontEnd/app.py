@@ -24,6 +24,12 @@ def echo():
     return render_template('echo.html')
 
 
+@app.route('/frames')
+def frames():
+    """Video streaming home page."""
+    return render_template('frames.html')
+
+
 def gen(camera):
     """Video streaming generator function."""
     while True:

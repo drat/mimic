@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1956b9d5-3405-4b94-8ad5-e56b090d9c90" name="Default Changelist" comment="" />
+    <list default="true" id="1956b9d5-3405-4b94-8ad5-e56b090d9c90" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/echoPlus.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chk.log" beforeDir="false" afterPath="$PROJECT_DIR$/chk.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/echo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/echo.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,43 +25,48 @@
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.22" value="2" />
           <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.59" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="c" value="2" />
           <entry key="css" value="1" />
-          <entry key="html" value="4" />
+          <entry key="html" value="5" />
           <entry key="js" value="3" />
-          <entry key="log" value="2" />
+          <entry key="log" value="3" />
           <entry key="py" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="C++" value="2" />
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="4" />
+          <entry key="HTML" value="5" />
           <entry key="JavaScript" value="3" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="Python" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="69" />
+          <entry key="c" value="8" />
+          <entry key="html" value="116" />
           <entry key="js" value="989" />
-          <entry key="log" value="35" />
-          <entry key="py" value="315" />
+          <entry key="log" value="43" />
+          <entry key="py" value="335" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="69" />
+          <entry key="C++" value="8" />
+          <entry key="HTML" value="116" />
           <entry key="JavaScript" value="989" />
-          <entry key="PLAIN_TEXT" value="35" />
-          <entry key="Python" value="315" />
+          <entry key="PLAIN_TEXT" value="43" />
+          <entry key="Python" value="335" />
         </counts>
       </usages-collector>
     </session>
@@ -64,11 +76,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+            <state relative-caret-position="462">
+              <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
               <folding>
                 <element signature="e#22#57#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/frames.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -85,25 +106,160 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chk.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2130">
-              <caret line="71" column="10" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
+            <state relative-caret-position="74">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/helloWorld.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/echoPlus.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6">
+              <caret line="744" column="53" selection-start-line="744" selection-start-column="53" selection-end-line="744" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+                <element signature="e#0#51009#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/echo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+            <state relative-caret-position="120">
+              <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
               <folding>
                 <element signature="n#script#9;n#head#0;n#html#0;n#!!top" />
                 <element signature="n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#p#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#p#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
@@ -113,22 +269,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/echotest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
+            <state relative-caret-position="570">
               <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-              <folding>
-                <element signature="e#1529#14725#0" />
-                <element signature="e#1765#14503#0" />
-                <element signature="e#1830#14494#0" />
-                <element signature="e#14533#14650#0" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#2;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#1;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#2;n#div#2;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -151,8 +293,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -174,7 +316,14 @@
       <find>foot</find>
       <find>jpg</find>
       <find>static.modules.</find>
+      <find>THIS DEMO</find>
+      <find>mutex</find>
+      <find>packet</find>
+      <find>record</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -193,11 +342,14 @@
         <option value="$PROJECT_DIR$/camera_pi.py" />
         <option value="$PROJECT_DIR$/camera.py" />
         <option value="$PROJECT_DIR$/static/js/siptest.js" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/mimicPlugin/plugin.py" />
-        <option value="$PROJECT_DIR$/chk.log" />
         <option value="$PROJECT_DIR$/static/js/echotest.js" />
         <option value="$PROJECT_DIR$/templates/echo.html" />
+        <option value="$PROJECT_DIR$/echoPlus.c" />
+        <option value="$PROJECT_DIR$/helloWorld.c" />
+        <option value="$PROJECT_DIR$/chk.log" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/templates/frames.html" />
       </list>
     </option>
   </component>
@@ -207,12 +359,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="88" />
-    <option name="y" value="62" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="696" />
+    <option name="y" value="-38" />
     <option name="width" value="3026" />
     <option name="height" value="1946" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -228,13 +381,7 @@
             <path>
               <item name="exampleFrontEnd" type="b2602c69:ProjectViewProjectNode" />
               <item name="exampleFrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exampleFrontEnd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exampleFrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -294,10 +441,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="44" y="31" width="1513" height="973" extended-state="1" />
+    <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12783505" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12920962" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -308,7 +455,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.8831615" visible="true" weight="0.41567695" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.8831615" visible="true" weight="0.32304037" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.116838485" side_tool="true" weight="0.46912113" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32897863" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -383,10 +530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="53" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="e#1946#2006#0" />
-            <element signature="e#2145#2401#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -394,43 +537,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#p#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
+    <entry file="file://$PROJECT_DIR$/static/js/echotest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding>
-            <element signature="e#22#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mimicPlugin/plugin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chk.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2130">
-          <caret line="71" column="10" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
+        <state relative-caret-position="570">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -444,41 +557,182 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/echotest.js">
+    <entry file="file://$PROJECT_DIR$/templates/echo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        <state relative-caret-position="120">
+          <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
           <folding>
-            <element signature="e#1529#14725#0" />
-            <element signature="e#1765#14503#0" />
-            <element signature="e#1830#14494#0" />
-            <element signature="e#14533#14650#0" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#2;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#2;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#script#9;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/echo.html">
+    <entry file="file://$PROJECT_DIR$/mimicPlugin/plugin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+        <state relative-caret-position="60">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/echoPlus.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6">
+          <caret line="744" column="53" selection-start-line="744" selection-start-column="53" selection-end-line="744" selection-end-column="53" />
           <folding>
-            <element signature="n#script#9;n#head#0;n#html#0;n#!!top" />
-            <element signature="n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#p#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#p#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
+            <element signature="e#0#51009#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helloWorld.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chk.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+          <folding>
+            <element signature="e#22#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frames.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
