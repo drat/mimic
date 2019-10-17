@@ -13,6 +13,7 @@ import { AlertService, AuthenticationService, UserService, ScriptService } from 
 import { HomeComponent } from './home/index';
 import { LoginComponent } from './login/index';
 import { RegisterComponent } from './register/index';
+import { PluginComponent } from './plugin/index'
 
 @NgModule({
     imports: [
@@ -26,7 +27,8 @@ import { RegisterComponent } from './register/index';
         AlertComponent,
         HomeComponent,
         LoginComponent,
-        RegisterComponent
+        RegisterComponent,
+        PluginComponent
     ],
     providers: [
         AuthGuard,

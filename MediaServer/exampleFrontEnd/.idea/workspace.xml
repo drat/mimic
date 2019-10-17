@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1956b9d5-3405-4b94-8ad5-e56b090d9c90" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../WebApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/client/app/_services/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/client/app/_services/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/client/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/client/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/client/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/client/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/client/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/client/app/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/client/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/client/app/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/client/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/client/systemjs.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/client/systemjs.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/server/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/server/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApplication/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApplication/server/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +14,7 @@
     <session id="-1810665432">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="1" />
@@ -37,8 +24,9 @@
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.59" value="1" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -238,8 +226,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="116" />
-    <option name="y" value="250" />
+    <option name="x" value="30" />
+    <option name="y" value="64" />
     <option name="width" value="3026" />
     <option name="height" value="1946" />
   </component>
@@ -324,10 +312,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="125" width="1513" height="973" extended-state="1" />
-    <editor active="true" />
+    <frame x="15" y="32" width="1513" height="973" extended-state="1" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1628866" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16494845" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -338,8 +325,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.88178694" visible="true" weight="0.32304037" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.11821306" side_tool="true" visible="true" weight="0.32304037" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.88109964" visible="true" weight="0.32304037" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.118900344" side_tool="true" visible="true" weight="0.32304037" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32897863" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
