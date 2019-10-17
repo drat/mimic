@@ -2,7 +2,7 @@
 <html>
 <head>
     <base href="/" />
-    <title>MEAN with Angular 2/5 User Registration and Login Example</title>
+    <title>Project Mimic</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- bootstrap css -->
@@ -29,16 +29,38 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
     <!---->
     <script type="text/javascript" src="app/assets/js/Janus.js" ></script>
+    <script type="text/javascript" src="app/assets/js/serverParams.js"></script>
     <script type="text/javascript" src="app/assets/js/frames.js"></script>
+    <script type="text/javascript" src="app/assets/js/echo.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cerulean/bootstrap.min.css" type="text/css"/>
     <link rel="stylesheet" href="app/assets/css/demo.css" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css" type="text/css"/>
 
 
+    <!-- Skype Web SDK -->
+    <link href="app/assets/css/skypeCSS.css" rel="stylesheet">
+
+    <!-- SkypeWebSDK Bootstrap Libray -->
+    <script src="https://swx.cdn.skype.com/shared/v/1.1.23.0/SkypeBootstrap.min.js"></script>
+
+    <!-- Load Bootstrap
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    -->
+
+    <!-- index.js is just a sample that demonstrates how to use lync.js -->
+    <script src="app/assets/js/skypeScript.js"></script>
+
 
 </head>
 <body>
-    <app>Loading...</app>
+    <app>
+        <div style="top:50%">
+            <p style="text-align:center;position: relative;">
+                <img src="app/assets/img/spin.gif" alt="Logo">
+            </p>
+        </div>
+    </app>
 </body>
 </html>

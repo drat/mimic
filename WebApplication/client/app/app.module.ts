@@ -13,7 +13,7 @@ import { AlertService, AuthenticationService, UserService, ScriptService } from 
 import { HomeComponent } from './home/index';
 import { LoginComponent } from './login/index';
 import { RegisterComponent } from './register/index';
-import { PluginComponent } from './plugin/index'
+import { PluginComponent } from './plugin/index';
 
 @NgModule({
     imports: [
