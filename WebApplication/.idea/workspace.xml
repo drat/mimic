@@ -50,9 +50,12 @@
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.35" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.47" value="1" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -60,7 +63,7 @@
           <entry key="css" value="4" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="12" />
-          <entry key="js" value="14" />
+          <entry key="js" value="15" />
           <entry key="json" value="7" />
           <entry key="md" value="1" />
           <entry key="ts" value="23" />
@@ -72,7 +75,7 @@
           <entry key="CSS" value="4" />
           <entry key="HTML" value="12" />
           <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="14" />
+          <entry key="JavaScript" value="15" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="TypeScript" value="23" />
@@ -83,7 +86,7 @@
         <counts>
           <entry key="css" value="8" />
           <entry key="html" value="1494" />
-          <entry key="js" value="469" />
+          <entry key="js" value="524" />
           <entry key="json" value="97" />
           <entry key="ts" value="776" />
           <entry key="txt" value="2" />
@@ -94,25 +97,25 @@
           <entry key="CSS" value="8" />
           <entry key="HTML" value="1494" />
           <entry key="JSON" value="97" />
-          <entry key="JavaScript" value="469" />
+          <entry key="JavaScript" value="524" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="TypeScript" value="776" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="TypeScriptServerServiceImpl" value="7" />
+          <entry key="TypeScriptServerServiceImpl" value="8" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/app/plugin/plugin.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="156" column="137" selection-start-line="156" selection-start-column="137" selection-end-line="156" selection-end-column="137" />
+            <state relative-caret-position="3330">
+              <caret line="119" column="70" selection-start-line="119" selection-start-column="60" selection-end-line="119" selection-end-column="70" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -123,40 +126,49 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/app/assets/js/echo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+              <folding>
+                <element signature="e#928#990#0" />
+                <element signature="e#1038#14191#0" />
+                <element signature="e#1318#3172#0" />
+                <element signature="e#3205#3343#0" />
+                <element signature="e#3381#3952#0" />
+                <element signature="e#3988#4052#0" />
+                <element signature="e#4095#4196#0" />
+                <element signature="e#4232#4384#0" />
+                <element signature="e#4427#4597#0" />
+                <element signature="e#4638#6609#0" />
+                <element signature="n#!!block;n#checkEnter#0" />
+                <element signature="n#!!block;n#sendData#0" />
+                <element signature="n#!!block;n#getQueryStringValue#0" />
+                <element signature="n#!!block;n#addSimulcastButtons#0" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#2;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#1;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#2;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#!!block;n#updateSimulcastButtons#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="1260">
               <caret line="42" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#app#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#app#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/assets/js/skypeScript.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="180" column="22" lean-forward="true" selection-start-line="180" selection-start-column="22" selection-end-line="180" selection-end-column="22" />
-              <folding>
-                <element signature="n#!!block;n#log#0" />
-                <element signature="n#!!block;n#padLeft#0" />
-                <element signature="n#!!block;n#imgError#0" />
-                <element signature="e#1155#1843#0" />
-                <element signature="e#1884#6974#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/app.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -189,9 +201,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>script</find>
-      <find>insert</find>
-      <find>createUser</find>
       <find>static</find>
       <find>start</find>
       <find>field</find>
@@ -219,6 +228,9 @@
       <find>signin</find>
       <find>passwor</find>
       <find>id=&quot;password&quot;</find>
+      <find>avatar</find>
+      <find>videoright</find>
+      <find>console.log(stream</find>
     </findStrings>
     <replaceStrings>
       <replace>assets</replace>
@@ -250,13 +262,13 @@
         <option value="$PROJECT_DIR$/client/app/app.module.ts" />
         <option value="$PROJECT_DIR$/client/app/assets/js/serverParams.js" />
         <option value="$PROJECT_DIR$/client/app/assets/js/frames.js" />
-        <option value="$PROJECT_DIR$/client/app/assets/js/echo.js" />
-        <option value="$PROJECT_DIR$/client/app/app.component.html" />
         <option value="$PROJECT_DIR$/client/app/app.routing.ts" />
         <option value="$PROJECT_DIR$/client/app/assets/css/skypeCSS.css" />
         <option value="$PROJECT_DIR$/client/index.html" />
         <option value="$PROJECT_DIR$/client/app/assets/js/skypeScript.js" />
         <option value="$PROJECT_DIR$/client/app/plugin/plugin.component.html" />
+        <option value="$PROJECT_DIR$/client/app/app.component.html" />
+        <option value="$PROJECT_DIR$/client/app/assets/js/echo.js" />
       </list>
     </option>
   </component>
@@ -278,10 +290,11 @@
       <path value="$PROJECT_DIR$/skype-docs/Skype/WebSDK/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="1522" />
-    <option name="height" value="1932" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="334" />
+    <option name="y" value="98" />
+    <option name="width" value="1690" />
+    <option name="height" value="1952" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -291,6 +304,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -298,45 +312,10 @@
               <item name="WebApplication" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebApplication" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="WebApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebApplication" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebApplication" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebApplication" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebApplication" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebApplication" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -385,9 +364,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="973" extended-state="7" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0927835" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21305841" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -398,7 +376,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.7917526" visible="true" weight="0.4192399" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.7917526" visible="true" weight="0.36460808" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.20824742" side_tool="true" weight="0.6674584" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32897863" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -651,9 +629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#19#199#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -670,28 +645,6 @@
             <element signature="n#!!block;n#startPlayout#0" />
             <element signature="n#!!block;n#stop#0" />
             <element signature="n#!!block;n#getQueryStringValue#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/assets/js/echo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-          <folding>
-            <element signature="n#!!block;n#checkEnter#0" />
-            <element signature="n#!!block;n#sendData#0" />
-            <element signature="n#!!block;n#getQueryStringValue#0" />
-            <element signature="n#!!block;n#addSimulcastButtons#0" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#2;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#2;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#!!block;n#updateSimulcastButtons#0" />
           </folding>
         </state>
       </provider>
@@ -717,6 +670,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/assets/js/skypeScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="180" column="22" selection-start-line="180" selection-start-column="22" selection-end-line="180" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/plugin/plugin.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3330">
+          <caret line="119" column="70" selection-start-line="119" selection-start-column="60" selection-end-line="119" selection-end-column="70" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#button#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#app#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#app#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/app/plugin/plugin.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -731,40 +715,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.html">
+    <entry file="file://$PROJECT_DIR$/client/app/assets/js/echo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="359">
+          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#app#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#app#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/assets/js/skypeScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="180" column="22" lean-forward="true" selection-start-line="180" selection-start-column="22" selection-end-line="180" selection-end-column="22" />
-          <folding>
-            <element signature="n#!!block;n#log#0" />
-            <element signature="n#!!block;n#padLeft#0" />
-            <element signature="n#!!block;n#imgError#0" />
-            <element signature="e#1155#1843#0" />
-            <element signature="e#1884#6974#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/plugin/plugin.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="156" column="137" selection-start-line="156" selection-start-column="137" selection-end-line="156" selection-end-column="137" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#button#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#928#990#0" />
+            <element signature="e#1038#14191#0" />
+            <element signature="e#1318#3172#0" />
+            <element signature="e#3205#3343#0" />
+            <element signature="e#3381#3952#0" />
+            <element signature="e#3988#4052#0" />
+            <element signature="e#4095#4196#0" />
+            <element signature="e#4232#4384#0" />
+            <element signature="e#4427#4597#0" />
+            <element signature="e#4638#6609#0" />
+            <element signature="n#!!block;n#checkEnter#0" />
+            <element signature="n#!!block;n#sendData#0" />
+            <element signature="n#!!block;n#getQueryStringValue#0" />
+            <element signature="n#!!block;n#addSimulcastButtons#0" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#2;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#2;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#!!block;n#updateSimulcastButtons#0" />
           </folding>
         </state>
       </provider>
