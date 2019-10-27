@@ -1,0 +1,5 @@
+import bpy
+
+for plane in bpy.data.objects:
+    if plane.type == 'MESH':
+        plane.active_material.blend_method = 'BLEND'

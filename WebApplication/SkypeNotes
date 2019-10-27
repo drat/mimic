@@ -1,0 +1,30 @@
+
+possible guide
+https://github.com/OfficeDev/skype-web-sdk-simple-sample-for-SfB-online
+
+I think my tenant is an office 365 developer account:
+https://account.microsoft.com/services/office/overview?OCID=PROD_Office_CONS_MyAccount_Migration&refd=stores.office.com
+
+
+Ben - Pacu2619
+Tony - Hapa5225
+
+
+using this for app build in ad https://docs.microsoft.com/en-us/skype-sdk/WebSDK/docs/DevelopWebSDKappsForSfBOnline#app-registration
+
+
+https://developer.microsoft.com/en-us/office/profile
+
+Tenant ID (Directory ID): 5b56d9af-5b85-494c-8b40-e61b56e37714
+
+
+tony@datasciencenewyork.com  is my developer account login email
+Tmele54@datasciencenewyork.onmicrosoft.com  is my skype username
+
+In https://portal.azure.com/ under my skype username above
+there is SkypeMimic project or app
+
+App Secret:
+superSecret
+12/31/2299
+i[_T]C-IH7X9kdxZBs14qNxsYUTb0jDB

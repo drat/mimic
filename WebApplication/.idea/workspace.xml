@@ -8,6 +8,7 @@
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkypeNotes" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/app/_services/script.service.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/app/_services/script.store.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/app/assets/css/demo.css" afterDir="false" />
@@ -19,6 +20,11 @@
       <change afterPath="$PROJECT_DIR$/client/app/assets/img/spin.gif" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/app/assets/modules/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/app/plugin/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pytest/AlphaBlendScript.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pytest/CGMatterMocap.txt.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pytest/cam.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pytest/echoPython.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pytest/mo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/app/_services/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/_services/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/app.module.ts" afterDir="false" />
@@ -43,51 +49,66 @@
     <session id="1430635430">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.19" value="2" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.22" value="3" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.47" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.open.time.49" value="1" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="SkypeNotes" value="1" />
           <entry key="css" value="4" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="12" />
-          <entry key="js" value="15" />
-          <entry key="json" value="7" />
+          <entry key="html" value="15" />
+          <entry key="jpg" value="1" />
+          <entry key="js" value="20" />
+          <entry key="json" value="10" />
           <entry key="md" value="1" />
-          <entry key="ts" value="23" />
-          <entry key="txt" value="1" />
+          <entry key="pkl" value="2" />
+          <entry key="py" value="2" />
+          <entry key="ts" value="28" />
+          <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="4" />
-          <entry key="HTML" value="12" />
-          <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="15" />
+          <entry key="HTML" value="15" />
+          <entry key="Image" value="1" />
+          <entry key="JSON" value="7" />
+          <entry key="JavaScript" value="20" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="TypeScript" value="23" />
-          <entry key="tsconfig" value="2" />
+          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="Python" value="2" />
+          <entry key="TypeScript" value="28" />
+          <entry key="tsconfig" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="SkypeNotes" value="360" />
           <entry key="css" value="8" />
-          <entry key="html" value="1494" />
-          <entry key="js" value="524" />
-          <entry key="json" value="97" />
+          <entry key="html" value="1589" />
+          <entry key="js" value="668" />
+          <entry key="json" value="103" />
+          <entry key="py" value="668" />
           <entry key="ts" value="776" />
           <entry key="txt" value="2" />
         </counts>
@@ -95,16 +116,17 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="8" />
-          <entry key="HTML" value="1494" />
-          <entry key="JSON" value="97" />
-          <entry key="JavaScript" value="524" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="HTML" value="1589" />
+          <entry key="JSON" value="103" />
+          <entry key="JavaScript" value="668" />
+          <entry key="PLAIN_TEXT" value="362" />
+          <entry key="Python" value="668" />
           <entry key="TypeScript" value="776" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="TypeScriptServerServiceImpl" value="8" />
+          <entry key="TypeScriptServerServiceImpl" value="10" />
         </counts>
       </usages-collector>
     </session>
@@ -114,77 +136,77 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/app/plugin/plugin.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3330">
-              <caret line="119" column="70" selection-start-line="119" selection-start-column="60" selection-end-line="119" selection-end-column="70" />
+            <state relative-caret-position="900">
+              <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#button#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/app/assets/js/echo.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/app/assets/js/skypeScript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+            <state relative-caret-position="300">
+              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
               <folding>
-                <element signature="e#928#990#0" />
-                <element signature="e#1038#14191#0" />
-                <element signature="e#1318#3172#0" />
-                <element signature="e#3205#3343#0" />
-                <element signature="e#3381#3952#0" />
-                <element signature="e#3988#4052#0" />
-                <element signature="e#4095#4196#0" />
-                <element signature="e#4232#4384#0" />
-                <element signature="e#4427#4597#0" />
-                <element signature="e#4638#6609#0" />
-                <element signature="n#!!block;n#checkEnter#0" />
-                <element signature="n#!!block;n#sendData#0" />
-                <element signature="n#!!block;n#getQueryStringValue#0" />
-                <element signature="n#!!block;n#addSimulcastButtons#0" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#2;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#1;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#2;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#!!block;n#updateSimulcastButtons#0" />
+                <element signature="n#!!block;n#log#0" />
+                <element signature="n#!!block;n#padLeft#0" />
+                <element signature="n#!!block;n#imgError#0" />
+                <element signature="n#!!block;n#init_skype#0" />
+                <element signature="e#1155#1843#0" />
+                <element signature="e#1884#6974#0" />
+                <element signature="e#2060#6724#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SkypeNotes">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pytest/echoPython.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+                <element signature="e#82#529#0" />
+                <element signature="e#553#649#0" />
+                <element signature="e#671#742#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pytest/AlphaBlendScript.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pytest/CGMatterMocap.txt.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="4" selection-end-line="77" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#app#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#app#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/plugin/plugin.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-                <element signature="e#235#304#0" />
-                <element signature="e#571#805#0" />
-                <element signature="n#!!block;n#ngOnInit#0;n#PluginComponent#0" />
-                <element signature="n#!!block;n#loadAllUsers#0;n#PluginComponent#0" />
-              </folding>
+            <state relative-caret-position="377">
+              <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -194,19 +216,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>static</find>
-      <find>start</find>
-      <find>field</find>
-      <find>insertName</find>
-      <find>stat</find>
-      <find>Initial</find>
       <find>UserService</find>
       <find>Start</find>
       <find>function</find>
@@ -231,6 +248,12 @@
       <find>avatar</find>
       <find>videoright</find>
       <find>console.log(stream</find>
+      <find>initialize</find>
+      <find>sign-in</find>
+      <find>skype</find>
+      <find>init_</find>
+      <find>sign_into_skype</find>
+      <find>grant</find>
     </findStrings>
     <replaceStrings>
       <replace>assets</replace>
@@ -264,11 +287,19 @@
         <option value="$PROJECT_DIR$/client/app/assets/js/frames.js" />
         <option value="$PROJECT_DIR$/client/app/app.routing.ts" />
         <option value="$PROJECT_DIR$/client/app/assets/css/skypeCSS.css" />
+        <option value="$PROJECT_DIR$/client/app/app.component.html" />
+        <option value="$PROJECT_DIR$/client/app/assets/js/echo.js" />
+        <option value="$PROJECT_DIR$/client/bs-config.js" />
+        <option value="$PROJECT_DIR$/client/app/bs-config.js" />
+        <option value="$PROJECT_DIR$/client/package.json" />
+        <option value="$PROJECT_DIR$/client/app/assets/js/skypeNfB.js" />
         <option value="$PROJECT_DIR$/client/index.html" />
         <option value="$PROJECT_DIR$/client/app/assets/js/skypeScript.js" />
         <option value="$PROJECT_DIR$/client/app/plugin/plugin.component.html" />
-        <option value="$PROJECT_DIR$/client/app/app.component.html" />
-        <option value="$PROJECT_DIR$/client/app/assets/js/echo.js" />
+        <option value="$PROJECT_DIR$/SkypeNotes" />
+        <option value="$PROJECT_DIR$/echoPython.py" />
+        <option value="$PROJECT_DIR$/pytest/echoPython.py" />
+        <option value="$PROJECT_DIR$/pytest/mo.py" />
       </list>
     </option>
   </component>
@@ -291,8 +322,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="334" />
-    <option name="y" value="98" />
+    <option name="x" value="1308" />
+    <option name="y" value="164" />
     <option name="width" value="1690" />
     <option name="height" value="1952" />
   </component>
@@ -304,7 +335,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -312,10 +342,16 @@
               <item name="WebApplication" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebApplication" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="WebApplication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebApplication" type="462c0819:PsiDirectoryNode" />
+              <item name="pytest" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -328,11 +364,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\pytest" />
       <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\client\app\plugin" />
       <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\client\app\assets" />
       <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\src\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\pytest" />
+      <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\client\app" />
       <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\client\app\assets\img" />
       <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\client\app\_services" />
     </key>
@@ -364,8 +403,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="973" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21305841" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11546392" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -376,7 +416,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.7917526" visible="true" weight="0.36460808" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.7917526" visible="true" weight="0.42517814" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.20824742" side_tool="true" weight="0.6674584" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32897863" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -482,16 +522,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json" />
-    <entry file="file://$PROJECT_DIR$/src/main.ts" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -531,29 +561,8 @@
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/main.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/app/assets/js/Janus.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/systemjs.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/app/_services/script.store.js">
       <provider selected="true" editor-type-id="text-editor" />
@@ -604,55 +613,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/home/home.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/home/home.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/assets/js/serverParams.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/app/assets/js/frames.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="32" selection-start-column="32" selection-end-column="32" />
-          <folding>
-            <element signature="e#1008#1070#0" />
-            <element signature="e#1114#11604#0" />
-            <element signature="n#!!block;n#checkEnter#0" />
-            <element signature="n#!!block;n#updateRecsList#0" />
-            <element signature="n#!!block;n#startRecording#0" />
-            <element signature="n#!!block;n#startPlayout#0" />
-            <element signature="n#!!block;n#stop#0" />
-            <element signature="n#!!block;n#getQueryStringValue#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/app.routing.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -670,80 +634,159 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/assets/js/skypeScript.js">
+    <entry file="file://$PROJECT_DIR$/client/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/systemjs.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="180" column="22" selection-start-line="180" selection-start-column="22" selection-end-line="180" selection-end-column="22" />
+        <state relative-caret-position="-660">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/plugin/plugin.component.html">
+    <entry file="file://$PROJECT_DIR$/client/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3330">
-          <caret line="119" column="70" selection-start-line="119" selection-start-column="60" selection-end-line="119" selection-end-column="70" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#button#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state>
+          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.html">
+    <entry file="file://$PROJECT_DIR$/client/app/main.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/bs-config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#app#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#app#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/plugin/plugin.component.ts">
+    <entry file="file://$PROJECT_DIR$/client/app/assets/js/serverParams.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-            <element signature="e#235#304#0" />
-            <element signature="e#571#805#0" />
-            <element signature="n#!!block;n#ngOnInit#0;n#PluginComponent#0" />
-            <element signature="n#!!block;n#loadAllUsers#0;n#PluginComponent#0" />
-          </folding>
+        <state relative-caret-position="-32">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/app/assets/js/echo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+        <state relative-caret-position="30">
+          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/plugin/plugin.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/home/home.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="62" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/home/home.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-452">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/app.routing.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/assets/js/skypeNfB.js" />
+    <entry file="file://$PROJECT_DIR$/square_circle_opencv.jpg" />
+    <entry file="file://$PROJECT_DIR$/pytest/lol.pkl" />
+    <entry file="file://$PROJECT_DIR$/pytest/img.pkl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pytest/mo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/plugin/plugin.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
           <folding>
-            <element signature="e#928#990#0" />
-            <element signature="e#1038#14191#0" />
-            <element signature="e#1318#3172#0" />
-            <element signature="e#3205#3343#0" />
-            <element signature="e#3381#3952#0" />
-            <element signature="e#3988#4052#0" />
-            <element signature="e#4095#4196#0" />
-            <element signature="e#4232#4384#0" />
-            <element signature="e#4427#4597#0" />
-            <element signature="e#4638#6609#0" />
-            <element signature="n#!!block;n#checkEnter#0" />
-            <element signature="n#!!block;n#sendData#0" />
-            <element signature="n#!!block;n#getQueryStringValue#0" />
-            <element signature="n#!!block;n#addSimulcastButtons#0" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#2;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#2;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#!!block;n#updateSimulcastButtons#0" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#button#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/assets/js/skypeScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!block;n#log#0" />
+            <element signature="n#!!block;n#padLeft#0" />
+            <element signature="n#!!block;n#imgError#0" />
+            <element signature="n#!!block;n#init_skype#0" />
+            <element signature="e#1155#1843#0" />
+            <element signature="e#1884#6974#0" />
+            <element signature="e#2060#6724#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SkypeNotes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pytest/echoPython.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+            <element signature="e#82#529#0" />
+            <element signature="e#553#649#0" />
+            <element signature="e#671#742#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pytest/AlphaBlendScript.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pytest/CGMatterMocap.txt.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" selection-end-line="77" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="8" />
         </state>
       </provider>
     </entry>
