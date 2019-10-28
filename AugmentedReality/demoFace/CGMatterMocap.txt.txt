@@ -1,0 +1,190 @@
+import cv2
+import dlib, math
+import mathutils
+import matplotlib
+matplotlib.use('agg')
+import matplotlib.pyplot as plt
+import matplotlib.animation as animation
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.animation
+import pandas as pd
+import numpy as np
+import bpy
+
+cap = cv2.VideoCapture(0)
+
+detector = dlib.get_frontal_face_detector()
+predictor = dlib.shape_predictor("C:/Users/tonym/OneDrive/AAM_Portfolio/client_projects/objectManipulation/landmarks/shape_predictor_68_face_landmarks.dat")
+
+fig = plt.figure()
+
+cam=False
+
+while cam:
+    _, frame = cap.read()
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    faces = detector(gray)
+    
+    for face in faces:
+
+        # redraw the canvas
+        fig.canvas.draw()
+
+        x1 = face.left()
+        y1 = face.top()
+        x2 = face.right()
+        y2 = face.bottom()
+        
+        
+        cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 3)
+
+        landmarks = predictor(gray, face)
+
+        n_ar = []
+        x_ar = []
+        y_ar = []
+
+        for n in range(0, 68):
+            x = landmarks.part(n).x
+            y = landmarks.part(n).y
+            cv2.circle(frame, (x, y), 4, (255, 0, 0), -1)
+
+    sc._offsets3d = (x_ar, y_ar, n_ar)
+
+    # convert canvas to image
+    img = np.fromstring(fig.canvas.tostring_rgb(), dtype=np.uint8, sep='')
+    img = img.reshape(fig.canvas.get_width_height()[::-1] + (3,))
+
+    # display image with opencv or any operation you like
+    cv2.imshow("plot", img)
+    cv2.imshow("Frame", frame)
+
+    key = cv2.waitKey(1)
+    if key == 27:
+        break
+
+#bone_names = []
+#for armature in [ob for ob in bpy.data.objects if ob.type == 'ARMATURE']:
+#    for bone in armature.data.bones:
+#        print(bone)
+#        bone_names.append(bone.name)
+           
+
+arm = bpy.data.objects['Armature']
+bpy.ops.object.mode_set(mode='POSE')
+bone = arm.pose.bones['Bone.17']
+
+for i in range(10):
+    #bone.translate(0.0386701)
+    new_bone_loc = (0.0,0.0,1.0)
+    vec = mathutils.Vector(new_bone_loc)
+    bone.translate(vec)
+
+
+#pbone.rotation_mode = 'XYZ'
+#select axis in ['X','Y','Z']  <--bone local
+#axis = 'Z'
+#angle = 120
+#pbone.rotation_euler.rotate_axis(axis, math.radians(angle))
+#bpy.data.armatures['Armature'].edit_bones['Bone.'+str(17)].head.x += 1
+#bpy.data.armatures['Armature'].edit_bones[1].head.x += 1
+#bpy.data.armatures['Armature'].edit_bones[0].tail +=(1.5, -0.5, 1)
+
+
+'''
+#Face Motion Capture Script
+import bpy
+
+iter = 1
+
+#rename trackers
+FaceTrackers = bpy.data.collections.new('FaceTrackers')
+bpy.context.scene.collection.children.link(FaceTrackers)
+for trackers in bpy.data.objects:
+   if trackers.type != 'EMPTY':
+       continue
+   else:
+       iter = iter + 1
+       FaceTrackers.objects.link(trackers)
+if FaceTrackers:
+    for i, o in enumerate(FaceTrackers.objects):
+        o.name = "Tracker%d" % (i+1)
+
+#face mesh setup
+bpy.context.scene.frame_set(1)
+for obj in bpy.context.selected_objects:
+    obj.name = "Head"
+    obj.data.name = "Head"
+bpy.ops.object.transform_apply()
+
+#trackers with depth
+for value in range(1,iter):
+    selectname = "Tracker" + str(value)
+    ob = bpy.data.objects[selectname]
+    bpy.context.view_layer.objects.active = ob
+    bpy.context.object.constraints["Follow Track"].depth_object = bpy.data.objects["Head"]
+
+#add armatures to trackers
+for value in range(1,iter):
+    selectname = "Tracker" + str(value)
+    ob = bpy.data.objects[selectname]
+    bpy.context.view_layer.objects.active = ob
+    bpy.ops.object.armature_add(enter_editmode=False, location=ob.matrix_world.translation)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#join armatures in correct order
+bpy.context.view_layer.objects.active = ob = bpy.data.objects['Armature']
+bpy.ops.object.join()
+bpy.ops.object.transform_apply()    
+
+
+
+
+
+
+
+
+
+
+
+#rename bones in armature
+for value in range(1,iter):
+    if value == 1:
+        bonename = "Bone"
+    elif value > 1 and value < 11:
+        bonename = "Bone.00" + str(value-1)
+    elif value >= 11:
+        bonename = "Bone.0" + str(value-1)      
+    bone = bpy.data.objects['Armature'].data.bones.get(bonename)
+    bpy.data.objects['Armature'].data.bones[bonename].name = 'Bone' + str(value)
+
+
+#parent face to bones
+bpy.data.objects['Head'].select_set(True)
+bpy.data.objects['Armature'].select_set(True)
+bpy.ops.object.parent_set(type='ARMATURE_AUTO')
+
+#parent bones to trackers
+bpy.ops.object.posemode_toggle()
+for value in range(1,iter):
+    trackname = "Tracker" + str(value)
+    bonename = "Bone" + str(value)
+    bone = bpy.data.objects['Armature'].data.bones.get(bonename)
+    bpy.data.objects['Armature'].data.bones.active = bone
+    bpy.ops.pose.constraint_add(type='COPY_LOCATION')
+    bpy.context.object.pose.bones[bonename].constraints["Copy Location"].use_z = False
+    bpy.context.object.pose.bones[bonename].constraints["Copy Location"].target = bpy.data.objects[trackname]
+    bone.select = False
+'''

@@ -1,0 +1,105 @@
+# Libraries
+import cv2
+import os
+import dlib
+import bpy
+import matplotlib
+import math, mathutils, random
+matplotlib.use('agg')
+import matplotlib.pyplot as plt
+import matplotlib.animation as animation
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.animation
+import pandas as pd
+import numpy as np
+
+# Variables
+
+# Camera
+cap = cv2.VideoCapture(0)
+
+# face detector
+detector = dlib.get_frontal_face_detector()
+
+# landmark predictor
+predictor = dlib.shape_predictor("C:/Users/tonym/OneDrive/AAM_Portfolio/client_projects/objectManipulation/landmarks/shape_predictor_68_face_landmarks.dat")
+
+# font for landmark label
+font = cv2.FONT_HERSHEY_SIMPLEX
+
+# subset of landmarks for testing (right eye)
+eyeR = 17, 22
+
+# Bools
+cmra = True
+save = False
+visu = True
+# Definitions
+
+# moves a bone in reference to it's landmark
+def moveBone(boneTarget, x, y):
+    pose_bone = bpy.context.scene.objects['Armature'].pose.bones[boneTarget]
+    pose_bone.location[0] = x
+    pose_bone.location[2] = y
+    print("Moved bone", boneTarget, "to x,y position ", x,y)
+
+# captures current scene as matrix
+def return_frame():
+    # capture scene as a matrix as output 
+
+    scn = bpy.context.scene
+
+    # go to frame f
+    scn.frame_set(0)
+
+    # output the camera matrix on the current frame
+    mat = scn.camera.matrix_world 
+    
+    if save:
+        # set the filepath
+        scn.render.filepath = os.path.join('C:/Users/tonym/OneDrive/AAM_Portfolio/client_projects/MIMIC/AugmentedReality/demoFace/', str(f).zfill(4))
+
+        # render the current frame
+        bpy.ops.render.render(write_still=True)
+        
+    return mat
+
+
+# loops over camera frames, move's bones ( animates face ), and captures the new frame
+def animate():
+    
+    bpy.ops.object.posemode_toggle()
+    
+    while cmra:    
+    # get frame
+        _, frame = cap.read()
+        
+        # get grey frame
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        
+        # detect faces
+        faces = detector(gray)
+        
+        for face in faces:
+     
+            landmarks = predictor(gray, face)
+
+            for n in range(eyeR[0], eyeR[1]):
+                x = landmarks.part(n).x
+                y = landmarks.part(n).y
+                cv2.circle(frame, (x, y), 4, (255, n*3, n*2), -1)
+                cv2.putText(frame, str(n), (x+5, y), font, .5, (255, n*3, n*2), 1, cv2.LINE_AA)
+                moveBone("Bone."+str(n), x/1000, y/10)
+                frame = return_frame()
+                print(frame)
+                
+        if visu:
+                        
+            # display image with opencv or any operation you like
+            frame = cv2.resize(frame, (frame.shape[1]*3, frame.shape[0]*3))
+            cv2.imshow("Frame", frame)
+
+            key = cv2.waitKey(1)
+            if key == 27:
+                break
+
