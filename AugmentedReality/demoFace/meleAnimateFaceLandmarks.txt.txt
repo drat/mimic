@@ -421,9 +421,24 @@ def return_roll_pitch_yaw(image, radians=False):
         ]
     )
     
-     # Print some red dots on the image       
-     for point in landmarks_2D:
-         cv2.circle(frame,( point[0], point[1] ), 2, (0,0,255), -1)
+    # Camera geometry
+    focal_length = size[1]
+    center = (size[1]/2, size[0]/2)
+    
+    # Camera Matrix
+    camera_matrix = np.array(
+    [
+        [focal_length, 0, center[0]], 
+        [0, focal_length, center[1]],
+        [0, 0, 1]
+    ], dtype = "double")     
+    
+    # Distances
+    camera_distortion = np.zeros((4,1)) # Assuming no lens distortion
+ 
+    # Print some red dots on the image       
+    for point in landmarks_2D:
+        cv2.circle(frame,( point[0], point[1] ), 2, (0,0,255), -1)
  
  
      # Applying the PnP solver to find the 3D pose
@@ -434,7 +449,10 @@ def return_roll_pitch_yaw(image, radians=False):
      # points from the world coordinate system to the camera coordinate system.
      # tvec - Output translation vector. It is the position of the world origin (SELLION) in camera co-ords
      retval, rvec, tvec = cv2.solvePnP(
-        landmarks_3D, landmarks_2D, self.camera_matrix, camera_distortion
+        landmarks_3D, 
+        landmarks_2D, 
+        camera_matrix, 
+        camera_distortion
         )
  
      # Get as input the rotational vector
@@ -442,14 +460,15 @@ def return_roll_pitch_yaw(image, radians=False):
      rmat, _ = cv2.Rodrigues(rvec) 
  
      # euler_angles contain (pitch, yaw, roll)
-     # euler_angles = cv.DecomposeProjectionMatrix(projMatrix=rmat, cameraMatrix=camera_matrix, rotMatrix, transVect, rotMatrX=None, rotMatrY=None, rotMatrZ=None)
+     euler_angles = cv.DecomposeProjectionMatrix(projMatrix=rmat, cameraMatrix=camera_matrix, rotMatrix, transVect, rotMatrX=None, rotMatrY=None, rotMatrZ=None)
  
      head_pose = [ rmat[0,0], rmat[0,1], rmat[0,2], tvec[0],
                    rmat[1,0], rmat[1,1], rmat[1,2], tvec[1],
                    rmat[2,0], rmat[2,1], rmat[2,2], tvec[2],
                          0.0,      0.0,        0.0,    1.0 ]
-     
-     print(head_pose) #TODO remove this line
+
+     print("Euler Angles:", euler_angles) #TODO remove this line     
+     print("Head Pose Matrix:",head_pose) #TODO remove this line
      return rotationMatrixToEulerAngles(rmat)
 
 
