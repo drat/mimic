@@ -92,6 +92,12 @@ def setMode(newMode):
     bpy.ops.object.mode_set(mode=newMode) 
     return True
 
+    # change active object
+def setActiveObject(obj):
+    obj.bone.select=True
+    return True
+
+
 # translate bone
 def translateBoneXYZ( armatureName, modeName, boneName, x_offset, y_offset, z_offset=0 ):
 
@@ -104,7 +110,8 @@ def translateBoneXYZ( armatureName, modeName, boneName, x_offset, y_offset, z_of
     # Get Bone
     targetBone = arm.pose.bones[boneName]  
     
-    targetBone.bone.select=True
+    # Select Bone
+    setActiveObject(targetBone)
     # targetBone.bone.select_tail=True
     # targetBone.bone.select_head=True       # Make Bone Cursor Focus
     
@@ -216,7 +223,7 @@ def animate(cycles):
             # get angles of head pose [rotation and translation vectors]
             img, e_a = headPoseEstimation(frame, landmarks)
             
-            rotateBoneEuler( armatureName="Armature.neck", modeName="POSE", boneName="cSpine", rotation_vector=e_a )            
+            rotateBoneEuler( armatureName="Armature.neck", modeName="POSE", boneName="cSpine", rotation_vector=e_a )       
             
             # to move the Face Armature
             if motion:            
@@ -249,7 +256,7 @@ def animate(cycles):
                             cv2.putText(frame, info, (10, 10*plcmnt), font, .25, (255, n*3, n*2), 1, cv2.LINE_AA)
                             plcmnt+=1
                             cv2.putText(frame, str(n), (x+5, y), font, .5, (255, n*3, n*2), 1, cv2.LINE_AA)
-                            #translateBoneXYZ( armatureName=armature, modeName=mode, boneName="Bone."+str(n), x_offset=x_delta/50, y_offset=y_delta/50, z_offset=0.00 )
+                            translateBoneXYZ( armatureName=armature, modeName=mode, boneName="Bone."+str(n), x_offset=x_delta/50, y_offset=y_delta/50, z_offset=0.00 )
                         else:
                             pass                        
                 p.pprint(wind)
@@ -279,48 +286,60 @@ def rotateBoneEuler( armatureName, modeName, boneName, rotation_vector ):
     targetBone = arm.pose.bones[boneName]  
 
     # Select Bone
-    targetBone.bone.select=True 
+    setActiveObject(targetBone)
 
-    bpy.ops.transform.trackball(
-        value=[rotation_vector[0],rotation_vector[1]], #[3.14,3.14]
-        mirror=True, 
-        use_proportional_edit=False, 
-        proportional_edit_falloff='SMOOTH', 
-        proportional_size=1, 
-        use_proportional_connected=False, 
-        use_proportional_projected=False, 
-        release_confirm=True
-    )
-        
-    # Redraw the 3d view
-    bpy.ops.wm.redraw_timer(type='DRAW_WIN_SWAP', iterations=1) # Refresh 3D View
+    '''
     
-    ''' bpy.ops.transform.rotate(
-        value=y_degrees, 
-        orient_axis='Y', 
-        orient_type='GLOBAL', 
-        orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), 
-        orient_matrix_type='GLOBAL', 
-        constraint_axis=(False, True, False), 
-        mirror=True, 
-        use_proportional_edit=False, 
-        proportional_edit_falloff='SMOOTH', 
-        proportional_size=1, 
-        use_proportional_connected=False, 
-        use_proportional_projected=False, 
-        release_confirm=True
+        bpy.ops.transform.trackball(
+            value=[rotation_vector[0],rotation_vector[1]], #[3.14,3.14]
+            mirror=True, 
+            use_proportional_edit=False, 
+            proportional_edit_falloff='SMOOTH', 
+            proportional_size=1, 
+            use_proportional_connected=False, 
+            use_proportional_projected=False, 
+            release_confirm=True
         )
-        '''
-    print("Rotated", boneName)
+                '''   '''
+                    
+        bpy.ops.transform.rotate(
+            value=y_degrees, 
+            orient_axis='Y', 
+            orient_type='GLOBAL', 
+            orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), 
+            orient_matrix_type='GLOBAL', 
+            constraint_axis=(False, True, False), 
+            mirror=True, 
+            use_proportional_edit=False, 
+            proportional_edit_falloff='SMOOTH', 
+            proportional_size=1, 
+            use_proportional_connected=False, 
+            use_proportional_projected=False, 
+            release_confirm=True
+        )
+    https://manualzz.com/doc/27121231/blender-index---blender-documentation
+    '''
+    
+    print("Rotating the bone ->", boneName)
+    
     # Set rotation mode to Euler XYZ, easier to understand
-    #targetBone.rotation_mode = 'XYZ'
+    targetBone.rotation_mode = 'XYZ'
     
     # Euler features
-    #euler = ['X','Y','Z']
+    euler = ['X','Y','Z']
+    
     # select axis in ['X','Y','Z']  <--bone local
+    targetBone.rotation_euler = rotation_vector
+    
+    #m=0
     #for axis in euler:
-    #    angle = 90
-    #    targetBone.rotation_euler.rotate_axis(axis, math.radians(angle))
+    #    angle = rotation_vector[m]
+    #    m+=1
+    #    print("Rotation:", axis, angle, "(radians)")
+    #    targetBone.rotation_euler.rotate_axis(axis, angle)
+    
+    # Refresh 3D View
+    bpy.ops.wm.redraw_timer(type='DRAW_WIN_SWAP', iterations=1) 
     
     return True 
 
@@ -338,30 +357,24 @@ def rotationMatrixToEulerAngles(R) :
             y = math.atan2(-R[2,0], sy)
             z = 0
 
-        euler_angles = np.array([x, y, z])
+        euler_angles = np.array([x+3.14, y*-1.0, z*-1.0])
 
-        print("Euler Angles:", euler_angles) 
+        print( "Euler Angles [yaw, pitch, roll]:", euler_angles )  
 
         return euler_angles
     
 def headPoseEstimation(frame, landmarks):
     
     # "Head-and-Face Anthropometric Survey of U.S. Respirator Users"
-    
-    # X-Y-Z with X pointing forward and Y on the left and Z up.
+    #  X-Y-Z with X pointing forward and Y on the left and Z up.
     # The X-Y-Z coordinates used are like the standard
-    # coordinates of ROS (robotic operative system)
+    #  coordinates of ROS (robotic operative system)
     # OpenCV uses the reference usually used in computer vision: 
-    # X points to the right, Y down, Z to the front
+    #  X points to the right, Y down, Z to the front
     
     # The Male mean interpupillary distance is 64.7 mm (https://en.wikipedia.org/wiki/Interpupillary_distance)
-   
-    
-    # Return the 2D position of our landmarks
-    # img_h, img_w, img_d = image.shape
-    # landmarks_2D = self._return_landmarks(inputImg=image, roiX=0, roiY=img_w, roiW=img_w, roiH=img_h, points_to_return=TRACKED_POINTS)
  
-    # Read Image
+    # lazy coding Image
     im = frame
     
     # Image dimensions in pixels
@@ -373,15 +386,27 @@ def headPoseEstimation(frame, landmarks):
 
     #2D image points. If you change the image, you need to change vector
     landmarks_2D = np.array(
-    [
-        (landmarks.part(lm_nose).x,       landmarks.part(lm_nose).y),       # Nose tip
-        (landmarks.part(lm_chin).x,       landmarks.part(lm_chin).y),       # Chin
-        (landmarks.part(lm_leftEye).x,    landmarks.part(lm_leftEye).y),    # Left eye left corner
-        (landmarks.part(lm_rightEye).x,   landmarks.part(lm_rightEye).y),   # Right eye right corne
-        (landmarks.part(lm_leftMouth).x,  landmarks.part(lm_leftMouth).y),  # Left Mouth corner
-        (landmarks.part(lm_rightMouth).x, landmarks.part(lm_rightMouth).y)  # Right mouth corner
-    ], 
-        dtype="double")
+        [
+            (
+                landmarks.part(lm_nose).x,       
+                landmarks.part(lm_nose).y),       # Nose tip
+            (
+                landmarks.part(lm_chin).x,       
+                landmarks.part(lm_chin).y),       # Chin
+            (
+                landmarks.part(lm_leftEye).x,    
+                landmarks.part(lm_leftEye).y),    # Left eye left corner
+            (
+                landmarks.part(lm_rightEye).x,   
+                landmarks.part(lm_rightEye).y),   # Right eye right corne
+            (
+                landmarks.part(lm_leftMouth).x,  
+                landmarks.part(lm_leftMouth).y),  # Left Mouth corner
+            (
+                landmarks.part(lm_rightMouth).x, 
+                landmarks.part(lm_rightMouth).y)  # Right mouth corner
+        ], 
+            dtype="double")
      
     # 3D model points.
     landmarks_3D = np.array(
@@ -414,37 +439,34 @@ def headPoseEstimation(frame, landmarks):
     for point in landmarks_2D:
         cv2.circle(frame,( int(point[0]), int(point[1]) ), 2, (0,0,255), -1)
  
- 
-    # Applying the PnP solver to find the 3D pose of the head from the 
-    # 2D position of the landmarks. retval - bool
-     
+    # retval - bool
     # rvec - Output rotation vector that, together with tvec, brings 
     # points from the world coordinate system to the camera coordinate system.
-     
     # tvec - Output translation vector. It is the position of the world origin (SELLION) in camera co-ords
+
     retval, rvec, tvec = cv2.solvePnP(
-                                            landmarks_3D, 
-                                            landmarks_2D, 
-                                            camera_matrix, 
-                                            camera_distortion
+                                           
+                    landmarks_3D, 
+                    landmarks_2D, 
+                    camera_matrix, 
+                    camera_distortion
  
                                         )
  
     # Get as input the rotational vector
     # Return a rotational matrix
     rmat, _ = cv2.Rodrigues(rvec) 
- 
-    # euler_angles contain (pitch, yaw, roll)
-    #euler_angles = cv2.DecomposeProjectionMatrix(projMatrix=rmat, cameraMatrix=camera_matrix, rotMatrix,transVect, rotMatrX=None, rotMatrY=None, rotMatrZ=None )
- 
-    head_pose = [ rmat[0,0], rmat[0,1], rmat[0,2], tvec[0],
-                   rmat[1,0], rmat[1,1], rmat[1,2], tvec[1],
-                   rmat[2,0], rmat[2,1], rmat[2,2], tvec[2],
-                         0.0,      0.0,        0.0,    1.0 ]
-
-    print("Head Pose Matrix:",head_pose)
+  
+    head_pose = [ 
+                    rmat[0,0], rmat[0,1], rmat[0,2], tvec[0],
+                    rmat[1,0], rmat[1,1], rmat[1,2], tvec[1],
+                    rmat[2,0], rmat[2,1], rmat[2,2], tvec[2],
+                         0.0,       0.0,       0.0,     1.0 
+                 ]
     
+    # euler_angles contain (pitch, yaw, roll)   
     euler_angles = rotationMatrixToEulerAngles(rmat) 
+    
     (nose_end_point2D, jacobian) = cv2.projectPoints(
                                     
                     np.array([(0.0, 0.0, 50.0)]), 
@@ -453,11 +475,20 @@ def headPoseEstimation(frame, landmarks):
                     camera_matrix, 
                     camera_distortion
         
-                                            )    
-    p1 = (int(landmarks_2D[0][0]), int(landmarks_2D[0][1]))
-    p2 = (int(nose_end_point2D[0][0][0]), int(nose_end_point2D[0][0][1]))
+    )    
+
+    # Points to plot vector normal to the landmarks_2d plane, p1->head, p2->tail
+    p1 = (
+            int(landmarks_2D[0][0]), 
+            int(landmarks_2D[0][1])
+         )
     
-    cv2.line(im, p1, p2, (255,0,0), 2)
+    p2 = (
+            int(nose_end_point2D[0][0][0]), 
+            int(nose_end_point2D[0][0][1])
+         )
+    
+    cv2.line(im, p1, p2, (255,0,0), 3)
     cv2.putText(frame, "P1: "+str(p1)+"P2: "+str(p2), p1, font, .5, (255, 0, 0), 1, cv2.LINE_AA)
     
     print( "Vector [(p1: x, y), (p2: x, y)] for Euler Calculation", p1, p2 )
@@ -468,6 +499,81 @@ def headPoseEstimation(frame, landmarks):
     return frame, euler_angles
 
 
+def reset_face():
+    
+    for i in range(min(_lm),max(_lm)+1): 
+        if i in _lm:
+            arm = bpy.data.objects["Armature.face"]         # Get Armature
+            setMode("POSE")                                 # need POSE mode to set armature bones
+            pb = arm.pose.bones["Bone."+str(i)]
+                
+            pb.location[0] = 0 # x
+            pb.location[1] = 0 # y
+            pb.location[2] = 0 # y
+
+     # Get Armature
+    arm = bpy.data.objects["Armature.neck"]
+    
+    # POSE mode allows translation
+    setMode("POSE")                      
+    
+    # Get Bone
+    targetBone = arm.pose.bones["cSpine"]  
+
+    # Select Bone
+    setActiveObject(targetBone)
+    
+    '''
+
+        # Rotate the gead
+        bpy.ops.transform.trackball(
+            value=(0,0), mirror=True, use_proportional_edit=False,
+            proportional_edit_falloff='SMOOTH', proportional_size=1, 
+            use_proportional_connected=False, 
+            use_proportional_projected=False, 
+            release_confirm=True
+            )
+        
+        # X Axis
+        bpy.ops.transform.rotate(value=0.00, orient_axis='X', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=True, use_proportional_edit=False, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, release_confirm=True)
+        
+        # Y Axis
+        bpy.ops.transform.rotate(value=0.00, orient_axis='Y', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=True, use_proportional_edit=False, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, release_confirm=True)    
+
+        # Z Axis
+        bpy.ops.transform.rotate(value=0.00, orient_axis='Z', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=True, use_proportional_edit=False, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, release_confirm=True)
+
+    '''    
+
+    rotateBoneEuler( 
+    
+        armatureName="Armature.neck", 
+        modeName="POSE", 
+        boneName="cSpine", 
+        rotation_vector=[0,0,0] 
+        
+    )
+    
+    print("Reset Face and Head")
+
+    # Redraw the 3d view
+    bpy.ops.wm.redraw_timer(type='DRAW_WIN_SWAP', iterations=1) # Refresh 3D View
+
+    return True
+
+
+############################# Execution #############################
+
+# begin the animation
+animate(cycles=250)
+reset_face()
+
+
+
+
+
+
+'''
 def headPoseEstimation_old(frame, landmarks):
 
     # Read Image
@@ -536,60 +642,4 @@ def headPoseEstimation_old(frame, landmarks):
     print( "Translation Vector:\n {0}".format(translation_vector) )
     
     return frame, rotation_vector, translation_vector    
-    
-
-def reset_face():
-    
-    for i in range(min(_lm),max(_lm)+1): 
-        if i in _lm:
-            arm = bpy.data.objects["Armature.face"]         # Get Armature
-            setMode("POSE")                                 # need POSE mode to set armature bones
-            pb = arm.pose.bones["Bone."+str(i)]
-                
-            pb.location[0] = 0 # x
-            pb.location[1] = 0 # y
-            pb.location[2] = 0 # y
-
-     # Get Armature
-    arm = bpy.data.objects["Armature.neck"]
-    
-    # POSE mode allows translation
-    setMode("POSE")                      
-    
-    # Get Bone
-    targetBone = arm.pose.bones["cSpine"]  
-
-    # Select Bone
-    targetBone.bone.select=True 
-    
-    # Rotate the gead
-    bpy.ops.transform.trackball(
-        value=(0,0), mirror=True, use_proportional_edit=False,
-        proportional_edit_falloff='SMOOTH', proportional_size=1, 
-        use_proportional_connected=False, 
-        use_proportional_projected=False, 
-        release_confirm=True
-        )
-    
-    # X Axis
-    bpy.ops.transform.rotate(value=0.00, orient_axis='X', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=True, use_proportional_edit=False, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, release_confirm=True)
-    
-    # Y Axis
-    bpy.ops.transform.rotate(value=0.00, orient_axis='Y', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=True, use_proportional_edit=False, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, release_confirm=True)    
-
-    # Z Axis
-    bpy.ops.transform.rotate(value=0.00, orient_axis='Z', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=True, use_proportional_edit=False, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, release_confirm=True)
-    
-    print("Reset Face and Head")
-
-    # Redraw the 3d view
-    bpy.ops.wm.redraw_timer(type='DRAW_WIN_SWAP', iterations=1) # Refresh 3D View
-
-    return True
-
-
-############################# Execution #############################
-
-# begin the animation
-animate(cycles=200)
-reset_face()
+'''  
