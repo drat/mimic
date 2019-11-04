@@ -214,9 +214,9 @@ def animate(cycles):
             landmarks = predictor(gray, face)
             
             # get angles of head pose [rotation and translation vectors]
-            img, rot, tra = headPoseEstimation(frame, landmarks)
+            img, e_a = headPoseEstimation(frame, landmarks)
             
-            rotateBoneEuler( armatureName="Armature.neck", modeName="POSE", boneName="cSpine", rotation_vector=[rot[1][0],rot[2][0]] )            
+            rotateBoneEuler( armatureName="Armature.neck", modeName="POSE", boneName="cSpine", rotation_vector=e_a )            
             
             # to move the Face Armature
             if motion:            
@@ -282,7 +282,7 @@ def rotateBoneEuler( armatureName, modeName, boneName, rotation_vector ):
     targetBone.bone.select=True 
 
     bpy.ops.transform.trackball(
-        value=rotation_vector, #[3.14,3.14]
+        value=[rotation_vector[0],rotation_vector[1]], #[3.14,3.14]
         mirror=True, 
         use_proportional_edit=False, 
         proportional_edit_falloff='SMOOTH', 
@@ -324,64 +324,38 @@ def rotateBoneEuler( armatureName, modeName, boneName, rotation_vector ):
     
     return True 
 
-def return_roll_pitch_yaw(image, radians=False):
-     """ Return the the roll pitch and yaw angles associated with the input image.
- 
-     @param image It is a colour image. It must be >= 64 pixel.
-     @param radians When True it returns the angle in radians, otherwise in degrees.
-     """
-     
-     # The dlib shape predictor returns 68 points, we are interested only in a few of those
-     # TRACKED_POINTS = (0, 4, 8, 12, 16, 17, 26, 27, 30, 33, 36, 39, 42, 45, 62)
- 
-     # Antropometric constant values of the human head. 
-     # Check the wikipedia EN page and:
-     # "Head-and-Face Anthropometric Survey of U.S. Respirator Users"
-     #
-     # X-Y-Z with X pointing forward and Y on the left and Z up.
-     # The X-Y-Z coordinates used are like the standard
-     # coordinates of ROS (robotic operative system)
-     # OpenCV uses the reference usually used in computer vision: 
-     # X points to the right, Y down, Z to the front
-     #
-     # The Male mean interpupillary distance is 64.7 mm (https://en.wikipedia.org/wiki/Interpupillary_distance)
-     #
-     '''
-     
-        P3D_RIGHT_SIDE = np.float32([-100.0, -77.5, -5.0]) #0
-        P3D_GONION_RIGHT = np.float32([-110.0, -77.5, -85.0]) #4
-        P3D_MENTON = np.float32([0.0, 0.0, -122.7]) #8
-        P3D_GONION_LEFT = np.float32([-110.0, 77.5, -85.0]) #12
-        P3D_LEFT_SIDE = np.float32([-100.0, 77.5, -5.0]) #16
-        P3D_FRONTAL_BREADTH_RIGHT = np.float32([-20.0, -56.1, 10.0]) #17
-        P3D_FRONTAL_BREADTH_LEFT = np.float32([-20.0, 56.1, 10.0]) #26
-        P3D_SELLION = np.float32([0.0, 0.0, 0.0]) #27 This is the world origin
-        P3D_NOSE = np.float32([21.1, 0.0, -48.0]) #30
-        P3D_SUB_NOSE = np.float32([5.0, 0.0, -52.0]) #33
-        P3D_RIGHT_EYE = np.float32([-20.0, -32.35,-5.0]) #36 
-        P3D_RIGHT_TEAR = np.float32([-10.0, -20.25,-5.0]) #39
-        P3D_LEFT_TEAR = np.float32([-10.0, 20.25,-5.0]) #42
-        P3D_LEFT_EYE = np.float32([-20.0, 32.35,-5.0]) #45
-        #P3D_LIP_RIGHT = np.float32([-20.0, 65.5,-5.0]) #48
-        #P3D_LIP_LEFT = np.float32([-20.0, 65.5,-5.0]) #54
-        P3D_STOMION = np.float32([10.0, 0.0, -75.0]) #62
-     
-     '''
- 
-     # This matrix contains the 3D points of the
-     # 11 landmarks we want to find. It has been
-     # obtained from antrophometric measurement
-     # of the human head.
-     '''
-        landmarks_3D = np.float32([
-            P3D_RIGHT_SIDE, P3D_GONION_RIGHT,
-            P3D_MENTON,P3D_GONION_LEFT,
-            P3D_LEFT_SIDE,P3D_FRONTAL_BREADTH_RIGHT,
-            P3D_FRONTAL_BREADTH_LEFT,P3D_SELLION,
-            P3D_NOSE,P3D_SUB_NOSE,P3D_RIGHT_EYE,
-            P3D_RIGHT_TEAR,P3D_LEFT_TEAR,
-            P3D_LEFT_EYE,P3D_STOMION])
-    '''
+def rotationMatrixToEulerAngles(R) :
+  
+        sy = math.sqrt(R[0,0] * R[0,0] +  R[1,0] * R[1,0])    
+        singular = sy < 1e-6
+  
+        if  not singular :
+            x = math.atan2(R[2,1] , R[2,2])
+            y = math.atan2(-R[2,0], sy)
+            z = math.atan2(R[1,0], R[0,0])
+        else :
+            x = math.atan2(-R[1,2], R[1,1])
+            y = math.atan2(-R[2,0], sy)
+            z = 0
+
+        euler_angles = np.array([x, y, z])
+
+        print("Euler Angles:", euler_angles) 
+
+        return euler_angles
+    
+def headPoseEstimation(frame, landmarks):
+    
+    # "Head-and-Face Anthropometric Survey of U.S. Respirator Users"
+    
+    # X-Y-Z with X pointing forward and Y on the left and Z up.
+    # The X-Y-Z coordinates used are like the standard
+    # coordinates of ROS (robotic operative system)
+    # OpenCV uses the reference usually used in computer vision: 
+    # X points to the right, Y down, Z to the front
+    
+    # The Male mean interpupillary distance is 64.7 mm (https://en.wikipedia.org/wiki/Interpupillary_distance)
+   
     
     # Return the 2D position of our landmarks
     # img_h, img_w, img_d = image.shape
@@ -438,41 +412,63 @@ def return_roll_pitch_yaw(image, radians=False):
  
     # Print some red dots on the image       
     for point in landmarks_2D:
-        cv2.circle(frame,( point[0], point[1] ), 2, (0,0,255), -1)
+        cv2.circle(frame,( int(point[0]), int(point[1]) ), 2, (0,0,255), -1)
  
  
-     # Applying the PnP solver to find the 3D pose
-     # of the head from the 2D position of the
-     # landmarks.
-     # retval - bool
-     # rvec - Output rotation vector that, together with tvec, brings 
-     # points from the world coordinate system to the camera coordinate system.
-     # tvec - Output translation vector. It is the position of the world origin (SELLION) in camera co-ords
-     retval, rvec, tvec = cv2.solvePnP(
-        landmarks_3D, 
-        landmarks_2D, 
-        camera_matrix, 
-        camera_distortion
-        )
+    # Applying the PnP solver to find the 3D pose of the head from the 
+    # 2D position of the landmarks. retval - bool
+     
+    # rvec - Output rotation vector that, together with tvec, brings 
+    # points from the world coordinate system to the camera coordinate system.
+     
+    # tvec - Output translation vector. It is the position of the world origin (SELLION) in camera co-ords
+    retval, rvec, tvec = cv2.solvePnP(
+                                            landmarks_3D, 
+                                            landmarks_2D, 
+                                            camera_matrix, 
+                                            camera_distortion
  
-     # Get as input the rotational vector
-     # Return a rotational matrix
-     rmat, _ = cv2.Rodrigues(rvec) 
+                                        )
  
-     # euler_angles contain (pitch, yaw, roll)
-     euler_angles = cv.DecomposeProjectionMatrix(projMatrix=rmat, cameraMatrix=camera_matrix, rotMatrix, transVect, rotMatrX=None, rotMatrY=None, rotMatrZ=None)
+    # Get as input the rotational vector
+    # Return a rotational matrix
+    rmat, _ = cv2.Rodrigues(rvec) 
  
-     head_pose = [ rmat[0,0], rmat[0,1], rmat[0,2], tvec[0],
+    # euler_angles contain (pitch, yaw, roll)
+    #euler_angles = cv2.DecomposeProjectionMatrix(projMatrix=rmat, cameraMatrix=camera_matrix, rotMatrix,transVect, rotMatrX=None, rotMatrY=None, rotMatrZ=None )
+ 
+    head_pose = [ rmat[0,0], rmat[0,1], rmat[0,2], tvec[0],
                    rmat[1,0], rmat[1,1], rmat[1,2], tvec[1],
                    rmat[2,0], rmat[2,1], rmat[2,2], tvec[2],
                          0.0,      0.0,        0.0,    1.0 ]
 
-     print("Euler Angles:", euler_angles) #TODO remove this line     
-     print("Head Pose Matrix:",head_pose) #TODO remove this line
-     return rotationMatrixToEulerAngles(rmat)
+    print("Head Pose Matrix:",head_pose)
+    
+    euler_angles = rotationMatrixToEulerAngles(rmat) 
+    (nose_end_point2D, jacobian) = cv2.projectPoints(
+                                    
+                    np.array([(0.0, 0.0, 50.0)]), 
+                    rvec, 
+                    tvec, 
+                    camera_matrix, 
+                    camera_distortion
+        
+                                            )    
+    p1 = (int(landmarks_2D[0][0]), int(landmarks_2D[0][1]))
+    p2 = (int(nose_end_point2D[0][0][0]), int(nose_end_point2D[0][0][1]))
+    
+    cv2.line(im, p1, p2, (255,0,0), 2)
+    cv2.putText(frame, "P1: "+str(p1)+"P2: "+str(p2), p1, font, .5, (255, 0, 0), 1, cv2.LINE_AA)
+    
+    print( "Vector [(p1: x, y), (p2: x, y)] for Euler Calculation", p1, p2 )
+    print( "Camera Matrix :\n {0}".format(camera_matrix) )
+    print( "Rotation Vector:\n {0}".format(rvec) )
+    print( "Translation Vector:\n {0}".format(tvec) )
+    
+    return frame, euler_angles
 
 
-def headPoseEstimation(frame, landmarks):
+def headPoseEstimation_old(frame, landmarks):
 
     # Read Image
     im = frame
