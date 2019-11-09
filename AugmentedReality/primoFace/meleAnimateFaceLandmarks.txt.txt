@@ -35,7 +35,7 @@ font = cv2.FONT_HERSHEY_SIMPLEX
 cmra = True
 save = False
 visu = True
-motion = True
+motion = False
 
 # Landmark List
 FACIAL_LANDMARKS_IDXS = [
@@ -330,9 +330,9 @@ def rotateBoneEuler( armatureName, modeName, boneName, rotation_vector ):
     
     
     # select axis in ['X','Y','Z']  <--bone local
-    armFace.rotation_euler = rotation_vector
+    print("Rotation vector: ", rotation_vector)
     targetBone.rotation_euler = rotation_vector
-    
+    armFace.rotation_euler = rotation_vector
     #m=0
     #for axis in euler:
     #    angle = rotation_vector[m]
@@ -412,15 +412,15 @@ def headPoseEstimation(frame, landmarks):
     # 3D model points.
     landmarks_3D = np.array(
         [
-            (-0.04173, -4.208,  22.90),     # Nose tip
-            (-0.1188,  -16.88,  13.75),     # Chin
-            (8.43,      1.469,  10.54),     # Left eye left corner
-            (-8.394,    1.492,  10.56),     # Right eye right corner
-            (3.916,    -10.32,  17.64),     # Left Mouth corner
-            (-5.03,    -10.17,  17.64)      # Right mouth corner
+            ( 0.000000,  -0.019541, 0.107310 ),   # Nose tip
+            ( 0.000000,  -0.074454, 0.064616 ),   # Chin
+            ( 0.038825,   0.0068930, 0.0498460 ),  # Left eye left corner
+            ( -0.0395610, 0.0067520, 0.047923),    # Right eye right corner
+            ( 0.021485,   -0.046539, 0.0827440 ),  # Left Mouth corner
+            ( -0.0217970, -0.047244, 0.081981),    # Right mouth corner
         ]
     )
-    
+        
     # Camera geometry
     focal_length = size[1]
     center = (size[1]/2, size[0]/2)
@@ -470,7 +470,7 @@ def headPoseEstimation(frame, landmarks):
     
     (nose_end_point2D, jacobian) = cv2.projectPoints(
                                     
-                    np.array([(0.0, 0.0, 50.0)]), 
+                    np.array([(0.0, 0.0, 10.0)]), 
                     rvec, 
                     tvec, 
                     camera_matrix, 
@@ -566,12 +566,12 @@ def reset_face():
 ############################# Execution #############################
 
 # begin the animation
-animate(cycles=50)
+animate(cycles=200)
 reset_face()
 
 
 # Camera
-cam.release
+cap.release
 
 
 

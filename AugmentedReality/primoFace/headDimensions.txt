@@ -1,0 +1,17 @@
+
+
+height = 0.00459162303 * 30.6 = 0.1405
+width  = 0.00459162303 * 38.2 = 0.1754
+depth  = 0.00459162303 * 35.4 = 0.1625
+
+ # 3D model points.
+landmarks_3D = np.array(
+    [
+        (-0.001190, 0.00228,  0.00159),     # Nose tip
+        (-0.000215, 0.000724, 0.00098),     # Chin
+        (-0.000075, 0.000275, 0.000119),     # Left eye left corner
+        (,,),     # Right eye right corner
+        (,,),     # Left Mouth corner
+        (,,)      # Right mouth corner
+    ]
+)
