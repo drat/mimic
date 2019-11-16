@@ -37,6 +37,13 @@ face_armature = True # move face landmarks
 neck_armature = True # move head pose by neck cSpine bone
 save_renderFs = False # capture 3D world camera view into frames
 
+# Refresh Format
+k = 2
+
+# Dramatically poor way of relating pixels to 3d space
+# need to use pnp or other technique
+sensitivity = 20
+
 # Landmark List
 FACIAL_LANDMARKS_IDXS = [
     ("mouth", (48, 68)),
@@ -50,13 +57,13 @@ FACIAL_LANDMARKS_IDXS = [
 
 # Landmark List (Subset for Performance)
 lm_groups = [
-    ("mouth", (50,52,58,56,60,64)),
+    ("mouth",         (50,52,58,56,60,64)),
     ("right_eyebrow", (18,20)),
-    ("left_eyebrow", (22,24)),
-    ("right_eye", (38,40)),
-    ("left_eye", (44,48)),
-    ("nose", (30,32,34,36)),
-    ("jaw", (2,7,11,16))
+    ("left_eyebrow",  (22,24)),
+    ("right_eye",     (38,40)),
+    ("left_eye",      (44,48)),
+    ("nose",          (30,32,34,36)),
+    ("jaw",           (2,7,11,16))
 ]
 
 sub = list()
@@ -70,7 +77,7 @@ _lm = set(sub)
 neck_bone = ["cSpine"]
 
 # testing focus
-_lm = lm_groups[0][1]
+# _lm = lm_groups[0][1]
 
 # Full LandMark Range
 lm_full = set(list(range(0,69)))
@@ -92,12 +99,23 @@ def setMode(newMode):
     bpy.ops.object.mode_set(mode=newMode) 
     return True
 
-    # change active object
+# change active object
 def setActiveBone(obj):
     obj.bone.select=True
-    print("Target Bone: ",obj)
     return True
 
+# change active object
+def unSetActiveBone(obj):
+    obj.bone.select=False
+    return False
+
+def force_redraw(k):
+    if k ==0:
+        bpy.context.scene.update()
+    if k ==1:
+        bpy.ops.wm.redraw_timer(type='DRAW', iterations=1)
+    if k ==2:
+        bpy.ops.wm.redraw_timer(type='DRAW_WIN_SWAP', iterations=1)
 
 # translate bone
 def translateBoneXYZ( armatureName, modeName, boneName, x_offset, y_offset, z_offset=0 ):
@@ -115,10 +133,11 @@ def translateBoneXYZ( armatureName, modeName, boneName, x_offset, y_offset, z_of
     setActiveBone(targetBone)
     # targetBone.bone.select_tail=True
     # targetBone.bone.select_head=True     # Make Bone Cursor Focus
-    
+    # print("Bone, Arm, position, details", targetBone, armatureName, (x_offset/100, y_offset/100, z_offset),)
+
     # Translate Bone
     bpy.ops.transform.translate(           # Translate Bone
-        value=(x_offset/100, y_offset/100, z_offset), 
+        value=(x_offset/sensitivity, y_offset/sensitivity, z_offset), 
         orient_type='GLOBAL', 
         orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), 
         orient_matrix_type='GLOBAL', 
@@ -131,9 +150,7 @@ def translateBoneXYZ( armatureName, modeName, boneName, x_offset, y_offset, z_of
         release_confirm=True
     )
     
-    # Redraw the 3d view
-    bpy.ops.wm.redraw_timer(type='DRAW_WIN_SWAP', iterations=1) # Refresh 3D View
-    
+    unSetActiveBone(targetBone)
     # targetBone.bone.select=False
 
     return True
@@ -264,7 +281,7 @@ def animate(cycles):
                         else:
                             pass   
                                              
-                p.pprint(wind)
+                # p.pprint(wind)
 
         if visualization:
                         
@@ -277,7 +294,9 @@ def animate(cycles):
                 break
             
         counter+=1
-    
+        
+        # Redraw the 3d view
+        force_redraw(k)
 
 def rotateBoneEuler( armatureName, modeName, boneName, rotation_vector ):
     
@@ -318,7 +337,7 @@ def rotateBoneEuler( armatureName, modeName, boneName, rotation_vector ):
     #    targetBone.rotation_euler.rotate_axis(axis, angle)
     
     # Refresh 3D View
-    bpy.ops.wm.redraw_timer(type='DRAW_WIN_SWAP', iterations=1) 
+    # force_redraw(k)
     
     return True 
 
@@ -513,7 +532,7 @@ def reset_face():
     #xv print("Reset Face and Head")
 
     # Redraw the 3d view
-    bpy.ops.wm.redraw_timer(type='DRAW_WIN_SWAP', iterations=1) # Refresh 3D View
+    force_redraw(k) # Refresh 3D View
 
     return True
 
