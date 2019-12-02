@@ -1,0 +1,44 @@
+# fun time
+import bpy
+import random
+
+#generate 50 tiny spheres
+
+
+
+# make them a color that is really pretty with a dark background
+
+# have them fly around and look amazing
+
+home_position = (0,0,0) 
+ani_positions = list()
+length = 500
+density = 10
+for i in range(int(length/density)):
+    ani_positions.append(
+        (
+            random.randint(0,10),
+            random.randint(0,10),
+            random.randint(0,5)
+        )
+    )
+
+obj = bpy.data.objects["Sphere"]
+obj.location = home_position
+frame_num = 0
+
+for j in range(0,len(ani_positions)):
+    
+    print(ani_positions[j])
+    
+    if j == len(ani_positions):
+        bpy.context.scene.frame_set(frame_num)
+        obj.location = home_position
+        obj.keyframe_insert(data_path="location", index = -1)
+        frame_num+=density
+    else:
+        bpy.context.scene.frame_set(frame_num)
+        obj.location = ani_positions[j]
+        obj.keyframe_insert(data_path="location", index = -1)
+        frame_num+=density
+        
