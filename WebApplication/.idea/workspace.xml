@@ -45,97 +45,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1430635430">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="14" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.19" value="2" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.20" value="2" />
-          <entry key="project.open.time.22" value="3" />
-          <entry key="project.open.time.25" value="1" />
-          <entry key="project.open.time.27" value="1" />
-          <entry key="project.open.time.28" value="1" />
-          <entry key="project.open.time.29" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.31" value="2" />
-          <entry key="project.open.time.33" value="2" />
-          <entry key="project.open.time.35" value="1" />
-          <entry key="project.open.time.36" value="1" />
-          <entry key="project.open.time.45" value="1" />
-          <entry key="project.open.time.47" value="1" />
-          <entry key="project.open.time.49" value="1" />
-          <entry key="project.opened" value="29" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="SkypeNotes" value="1" />
-          <entry key="css" value="4" />
-          <entry key="gitignore" value="1" />
-          <entry key="html" value="15" />
-          <entry key="jpg" value="1" />
-          <entry key="js" value="20" />
-          <entry key="json" value="10" />
-          <entry key="md" value="1" />
-          <entry key="pkl" value="2" />
-          <entry key="py" value="2" />
-          <entry key="ts" value="28" />
-          <entry key="txt" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CSS" value="4" />
-          <entry key="HTML" value="15" />
-          <entry key="Image" value="1" />
-          <entry key="JSON" value="7" />
-          <entry key="JavaScript" value="20" />
-          <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="2" />
-          <entry key="TypeScript" value="28" />
-          <entry key="tsconfig" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="SkypeNotes" value="360" />
-          <entry key="css" value="8" />
-          <entry key="html" value="1589" />
-          <entry key="js" value="668" />
-          <entry key="json" value="103" />
-          <entry key="py" value="668" />
-          <entry key="ts" value="776" />
-          <entry key="txt" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="CSS" value="8" />
-          <entry key="HTML" value="1589" />
-          <entry key="JSON" value="103" />
-          <entry key="JavaScript" value="668" />
-          <entry key="PLAIN_TEXT" value="362" />
-          <entry key="Python" value="668" />
-          <entry key="TypeScript" value="776" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.js.language.service.starts">
-        <counts>
-          <entry key="TypeScriptServerServiceImpl" value="10" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -325,12 +234,6 @@
       <path value="$PROJECT_DIR$/skype-docs/Skype/WebSDK/lib/webcomponentsjs/package.json" />
       <path value="$PROJECT_DIR$/skype-docs/Skype/WebSDK/package.json" />
     </packageJsonPaths>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="334" />
-    <option name="y" value="98" />
-    <option name="width" value="1690" />
-    <option name="height" value="1952" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
