@@ -2,130 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9e76195-77d4-4ab4-ad71-b9cc8910e762" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/WebApplication.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SkypeNotes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/app/_services/script.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/app/_services/script.store.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/app/assets/css/demo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/app/assets/css/skypeCSS.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/app/assets/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/app/assets/img/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/app/assets/img/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/app/assets/img/pman.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/app/assets/img/spin.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/app/assets/modules/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/app/plugin/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest/AlphaBlendScript.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest/CGMatterMocap.txt.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest/cam.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest/echoPython.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest/mo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/_services/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/_services/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/app.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/app.routing.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/systemjs.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/systemjs.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AugmentedReality/primoFace/meleAnimatedFaceHead.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AugmentedReality/primoFace/meleAnimatedFaceHead.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AugmentedReality/primoFace/primo.blend" beforeDir="false" afterPath="$PROJECT_DIR$/../AugmentedReality/primoFace/primo.blend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AugmentedReality/primoFace/primo.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/../AugmentedReality/primoFace/primo.blend1" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/plugin/plugin.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
-              <folding>
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#button#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/assets/js/skypeScript.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-              <folding>
-                <element signature="n#!!block;n#log#0" />
-                <element signature="n#!!block;n#padLeft#0" />
-                <element signature="n#!!block;n#imgError#0" />
-                <element signature="n#!!block;n#init_skype#0" />
-                <element signature="e#1155#1843#0" />
-                <element signature="e#1884#6974#0" />
-                <element signature="e#2060#6724#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SkypeNotes">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pytest/echoPython.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-                <element signature="e#82#529#0" />
-                <element signature="e#553#649#0" />
-                <element signature="e#671#742#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pytest/AlphaBlendScript.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pytest/CGMatterMocap.txt.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="4" selection-end-line="77" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -136,86 +21,8 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>UserService</find>
-      <find>Start</find>
-      <find>function</find>
-      <find>zero-md</find>
-      <find>zero-mddiv</find>
-      <find>homecom</find>
-      <find>home</find>
-      <find>alert</find>
-      <find>begin</find>
-      <find>hide</find>
-      <find>input&gt;</find>
-      <find>echo</find>
-      <find>width</find>
-      <find>video</find>
-      <find>&lt;code&gt;</find>
-      <find>exampleFormControlSelect1</find>
-      <find>select scene</find>
-      <find>logout</find>
-      <find>signin</find>
-      <find>passwor</find>
-      <find>id=&quot;password&quot;</find>
-      <find>avatar</find>
-      <find>videoright</find>
-      <find>console.log(stream</find>
-      <find>initialize</find>
-      <find>sign-in</find>
-      <find>skype</find>
-      <find>init_</find>
-      <find>sign_into_skype</find>
-      <find>grant</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>assets</replace>
-      <replace>scenes</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/app/home/home.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/home/home.component.html" />
-        <option value="$PROJECT_DIR$/notes.txt" />
-        <option value="$PROJECT_DIR$/server/services/user.service.js" />
-        <option value="$PROJECT_DIR$/server/config.json" />
-        <option value="$PROJECT_DIR$/client/systemjs.config.js" />
-        <option value="$PROJECT_DIR$/client/script.service.ts" />
-        <option value="$PROJECT_DIR$/client/app/_services/index.ts" />
-        <option value="$PROJECT_DIR$/client/script.store.ts" />
-        <option value="$PROJECT_DIR$/client/app/_services/script.service.ts" />
-        <option value="$PROJECT_DIR$/client/app/_services/script.store.ts" />
-        <option value="$PROJECT_DIR$/client/app/home/home.component.html" />
-        <option value="$PROJECT_DIR$/client/app/home/home.component.ts" />
-        <option value="$PROJECT_DIR$/client/app/plugin/index.ts" />
-        <option value="$PROJECT_DIR$/client/app/plugin/plugin.component.ts" />
-        <option value="$PROJECT_DIR$/client/app/assets/js/echotest.js" />
-        <option value="$PROJECT_DIR$/client/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/client/app/assets/js/serverParams.js" />
-        <option value="$PROJECT_DIR$/client/app/assets/js/frames.js" />
-        <option value="$PROJECT_DIR$/client/app/app.routing.ts" />
-        <option value="$PROJECT_DIR$/client/app/assets/css/skypeCSS.css" />
-        <option value="$PROJECT_DIR$/client/app/app.component.html" />
-        <option value="$PROJECT_DIR$/client/app/assets/js/echo.js" />
-        <option value="$PROJECT_DIR$/client/bs-config.js" />
-        <option value="$PROJECT_DIR$/client/app/bs-config.js" />
-        <option value="$PROJECT_DIR$/client/package.json" />
-        <option value="$PROJECT_DIR$/client/app/assets/js/skypeNfB.js" />
-        <option value="$PROJECT_DIR$/client/index.html" />
-        <option value="$PROJECT_DIR$/client/app/assets/js/skypeScript.js" />
-        <option value="$PROJECT_DIR$/client/app/plugin/plugin.component.html" />
-        <option value="$PROJECT_DIR$/SkypeNotes" />
-        <option value="$PROJECT_DIR$/echoPython.py" />
-        <option value="$PROJECT_DIR$/pytest/echoPython.py" />
-        <option value="$PROJECT_DIR$/pytest/mo.py" />
-      </list>
-    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -235,53 +42,32 @@
       <path value="$PROJECT_DIR$/skype-docs/Skype/WebSDK/package.json" />
     </packageJsonPaths>
   </component>
+  <component name="ProjectId" id="1UTNx3Kzfacrt6eEyylW51dUZYV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="WebApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebApplication" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebApplication" type="462c0819:PsiDirectoryNode" />
-              <item name="pytest" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="ts.external.directory.path" value="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\client\node_modules\typescript\lib" />
     <property name="typescript-compiler-editor-notification" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\pytest" />
-      <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\client\app\plugin" />
-      <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\client\app\assets" />
-      <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\src\assets" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\pytest" />
       <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\client\app" />
       <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\client\app\assets\img" />
       <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\client\app\_services" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\pytest" />
+      <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\client\app\plugin" />
+      <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\client\app\assets" />
+      <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\src\assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -308,63 +94,6 @@
       <updated>1571166065339</updated>
     </task>
     <servers />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15532646" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32541567" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.7917526" visible="true" weight="0.4263658" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.20824742" side_tool="true" weight="0.6674584" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32897863" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="TypeScript" order="13" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="right" id="R Packages" order="4" />
-      <window_info anchor="right" id="Remote Host" order="5" />
-      <window_info anchor="right" id="SciView" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24881516" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32541567" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.77006805" visible="true" weight="0.46586826" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.20023696" side_tool="true" visible="true" weight="0.46586826" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32897863" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="TypeScript" order="13" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="right" id="R Packages" order="4" />
-      <window_info anchor="right" id="Remote Host" order="5" />
-      <window_info anchor="right" id="SciView" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -425,277 +154,20 @@
       </list>
     </option>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webpack.config.js" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-720" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tsconfig.json" />
-    <entry file="file://$PROJECT_DIR$/src/assets/css/demo.css" />
-    <entry file="file://$PROJECT_DIR$/src/app/home/home.component.html" />
-    <entry file="file://$PROJECT_DIR$/notes.txt" />
-    <entry file="file://$PROJECT_DIR$/src/app/home/home.component.ts" />
-    <entry file="file://$PROJECT_DIR$/src/app/_helpers/fake-backend.ts" />
-    <entry file="file://$PROJECT_DIR$/server/controllers/users.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/services/user.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/assets/css/demo.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/assets/js/Janus.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/_services/script.store.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/_services/script.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/_services/script.store.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/app.config.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/_services/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.vscode/settings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" selection-start-column="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/node_modules/@angular/router/src/config.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="332" column="4" selection-start-line="332" selection-start-column="4" selection-end-line="332" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/plugin/home.component.html" />
-    <entry file="file://$PROJECT_DIR$/client/app/plugin/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/assets/js/frames.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="32" selection-start-column="32" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/assets/css/skypeCSS.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/systemjs.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-660">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/main.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/bs-config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/assets/js/serverParams.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/assets/js/echo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/plugin/plugin.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/home/home.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="62" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/home/home.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-452">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/app.routing.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/assets/js/skypeNfB.js" />
-    <entry file="file://$PROJECT_DIR$/square_circle_opencv.jpg" />
-    <entry file="file://$PROJECT_DIR$/pytest/lol.pkl" />
-    <entry file="file://$PROJECT_DIR$/pytest/img.pkl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pytest/mo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/plugin/plugin.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#button#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/assets/js/skypeScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding>
-            <element signature="n#!!block;n#log#0" />
-            <element signature="n#!!block;n#padLeft#0" />
-            <element signature="n#!!block;n#imgError#0" />
-            <element signature="n#!!block;n#init_skype#0" />
-            <element signature="e#1155#1843#0" />
-            <element signature="e#1884#6974#0" />
-            <element signature="e#2060#6724#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SkypeNotes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pytest/echoPython.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-            <element signature="e#82#529#0" />
-            <element signature="e#553#649#0" />
-            <element signature="e#671#742#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pytest/AlphaBlendScript.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pytest/CGMatterMocap.txt.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" selection-end-line="77" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

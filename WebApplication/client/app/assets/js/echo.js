@@ -10,6 +10,7 @@ var spinner = null;
 
 var audioenabled = false;
 var videoenabled = false;
+var recordenabled = true;
 
 var doSimulcast = (getQueryStringValue("simulcast") === "yes" || getQueryStringValue("simulcast") === "true");
 var doSimulcast2 = (getQueryStringValue("simulcast2") === "yes" || getQueryStringValue("simulcast2") === "true");
@@ -44,7 +45,10 @@ function begin_echo(){
 									echo = pluginHandle;
 									Janus.log("Plugin attached! (" + echo.getPlugin() + ", id=" + echo.getId() + ")");
 									// Negotiate WebRTC
-									var body = { "audio": true, "video": true };
+									var body = {
+									 "audio": true, "video": true, "record" : true, "bitrate" : 1000, "filename" : "/home/ubuntu/mediaserver/janus-gateway/plugins/recordings/tony"
+									};
+
 									// We can try and force a specific codec, by telling the plugin what we'd prefer
 									// For simplicity, you can set it via a query string (e.g., ?vcodec=vp9)
 									if(acodec)
@@ -140,6 +144,7 @@ function begin_echo(){
 											$('#peervideo').remove();
 											$('#toggleaudio').attr('disabled', true);
 											$('#togglevideo').attr('disabled', true);
+											$('#togglerecord').attr('disabled', true);
 											$('#bitrate').attr('disabled', true);
 											$('#curbitrate').hide();
 											$('#curres').hide();
@@ -272,6 +277,15 @@ function begin_echo(){
 											else
 												$('#togglevideo').html("Enable video").removeClass("btn-danger").addClass("btn-success");
 											echo.send({"message": { "video": videoenabled }});
+										});
+									$('#togglerecord').click(
+										function() {
+											recordenabled = !recordenabled;
+											if(recordenabled)
+												$('#togglerecord').html("Disable record").removeClass("btn-success").addClass("btn-danger");
+											else
+												$('#togglerecord').html("Enable record").removeClass("btn-danger").addClass("btn-success");
+											echo.send({"message": { "record": recordenabled }});
 										});
 									$('#toggleaudio').parent().removeClass('hide').show();
 									$('#bitrate a').click(function() {

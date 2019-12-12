@@ -36,8 +36,8 @@ font = cv2.FONT_HERSHEY_SIMPLEX
 # Bools
 visualization = True  # view the camera feed with annotations
 face_armature = True  # move face landmarks
-neck_armature = False  # move head pose by neck cSpine bone
-save_renderFs = False  # capture 3D world camera view into frames
+neck_armature = True  # move head pose by neck cSpine bone
+save_renderFs = True  # capture 3D world camera view into frames
 
 # Refresh Format
 k = 2
@@ -92,7 +92,6 @@ print("The full set of landmarks are:", lm_full)
 print("The landmarks included in app:", _lm)
 print("Landmark areas include:")
 p.pprint(lm_groups)
-
 
 ############################# Definitions #############################
 
@@ -181,20 +180,28 @@ def positionBoneXYZ(armatureName, modeName, x, y, z=0):
 
 
 # captures current scene as matrix
-def return_frame():
+def return_frame(f):
+
     # capture scene as a matrix as output 
     scn = bpy.context.scene
-
+    
     # go to frame f
     scn.frame_set(0)
 
+
+
     if save_renderFs:
+        
         # set the filepath
         scn.render.filepath = os.path.join(
-            'C:/Users/tonym/OneDrive/AAM_Portfolio/client_projects/MIMIC/AugmentedReality/demoFace/', str(f).zfill(4))
+          'C:/Users/tony/Documents/projects/mimic/AugmentedReality/recordings', 
+          str(f).zfill(4)
+         )
 
         # render the current frame
-        bpy.ops.render.render(write_still=True)
+        bpy.ops.render.render(write_still=False)
+        
+        # bpy.ops.render.opengl(animation=False, sequencer=False, write_still=False, view_context=True)
 
     # output the camera matrix on the current frame        
     return scn.camera.matrix_world
@@ -304,6 +311,9 @@ def animate(cycles):
 
         # Redraw the 3d view
         force_redraw(k)
+        
+        # get rendered frame..
+        return_frame(counter)
 
 
 def rotateBoneEuler(armatureName, modeName, boneName, rotation_vector):
