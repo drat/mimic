@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9e76195-77d4-4ab4-ad71-b9cc8910e762" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../AugmentedReality/primoFace/meleAnimatedFaceHead.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AugmentedReality/primoFace/meleAnimatedFaceHead.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AugmentedReality/primoFace/primo.blend" beforeDir="false" afterPath="$PROJECT_DIR$/../AugmentedReality/primoFace/primo.blend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AugmentedReality/primoFace/primo.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/../AugmentedReality/primoFace/primo.blend1" afterDir="false" />
-    </list>
+    <list default="true" id="d9e76195-77d4-4ab4-ad71-b9cc8910e762" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
