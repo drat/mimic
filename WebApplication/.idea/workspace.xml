@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9e76195-77d4-4ab4-ad71-b9cc8910e762" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,61 +19,50 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/client/node_modules" />
-    <handled-path value="$PROJECT_DIR$/server/node_modules" />
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/client/package.json" />
-      <path value="$PROJECT_DIR$/server/package.json" />
-      <path value="$PROJECT_DIR$/skype-docs/Skype/WebSDK/lib/webcomponentsjs/package.json" />
-      <path value="$PROJECT_DIR$/skype-docs/Skype/WebSDK/package.json" />
-    </packageJsonPaths>
-  </component>
   <component name="ProjectId" id="1UTNx3Kzfacrt6eEyylW51dUZYV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/app/assets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
     <property name="ts.external.directory.path" value="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\client\node_modules\typescript\lib" />
     <property name="typescript-compiler-editor-notification" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\pytest" />
-      <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\client\app" />
-      <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\client\app\assets\img" />
-      <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\client\app\_services" />
+      <recent name="C:\Users\tony\Documents\projects\mimic\WebApplication\client\app\assets\img" />
+      <recent name="C:\Users\tony\Documents\projects\mimic\WebApplication\client\app\assets\js" />
+      <recent name="C:\Users\tony\Documents\projects\mimic\WebApplication\client\app\assets\fonts" />
+      <recent name="C:\Users\tony\Documents\projects\mimic\WebApplication\client\app\assets" />
+      <recent name="C:\Users\tony\Documents\projects\mimic\WebApplication\client\app\assets\css" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\pytest" />
-      <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\client\app\plugin" />
-      <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\client\app\assets" />
-      <recent name="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\src\assets" />
+      <recent name="C:\Users\tony\Documents\projects\mimic\WebApplication\client\app\assets" />
+      <recent name="C:\Users\tony\Documents\projects\mimic\WebApplication\client\app\assets\img" />
+      <recent name="C:\Users\tony\Documents\projects\mimic\WebApplication\client\app\assets\fonts" />
+      <recent name="C:\Users\tony\Documents\projects\mimic\WebApplication\client\app\assets\temp" />
+      <recent name="C:\Users\tony\Documents\projects\mimic\WebApplication\client\app\assets\remoteServer" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -88,6 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571166065339</updated>
+      <workItem from="1576334398906" duration="2060000" />
     </task>
     <servers />
   </component>
@@ -165,5 +154,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="661" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1576334397975">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="661" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576334397975" />
   </component>
 </project>

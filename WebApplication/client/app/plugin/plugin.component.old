@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Mimic</title>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div style="float:right; position: relative; right:0px !important; top: 10px !important;">
+					<button class="btn btn-default" routerLink="/login">Logout</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<div class="container" id="head1">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="page-header">
+								<h1>Project Mimic</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container" id="attributes">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="scenes">Select Scene</label>
+								<select class="form-control" id="scenes">
+									<option>Office</option>
+									<option>Beach</option>
+									<option>Theatre</option>
+									<option>Mall</option>
+									<option>Car</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="avatars">Select Avatar</label>
+								<select class="form-control" id="avatars">
+									<option>Kevin</option>
+									<option>Ben</option>
+									<option>Mike</option>
+									<option>Steve</option>
+									<option>Marie</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container" id="head2">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="page-header">
+								<h2>Launch the Echo &#8594; <button class="btn btn-success" autocomplete="off" id="start" onclick="begin_echo()" style="float: right !important;position: absolute !important; right:10px !important;" align="right">Initialize Echo</button></h2>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--
+				<div class="container" id="details">
+					<div class="row">
+						<div class="col-md-6">
+							<h3>Web Cam</h3>
+							<P></P>
+						</div>
+						<div class="col-md-6">
+							<h3>Avatar</h3>
+							<P></P>
+						</div>
+					</div>
+				</div>
+				-->
+
+				<div class="container" id="videos">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">Local Stream
+										<div class="btn-group btn-group-xs pull-right">
+											<button class="btn btn-danger" autocomplete="off" id="toggleaudio">Disable audio</button>
+											<button class="btn btn-danger" autocomplete="off" id="togglevideo">Disable video</button>
+
+											<div class="btn-group btn-group-xs">
+												<button id="bitrateset" autocomplete="off" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+													Bandwidth<span class="caret"></span>
+												</button>
+												<ul id="bitrate" class="dropdown-menu" role="menu">
+													<li><a href="#" id="0">No limit</a></li>
+													<li><a href="#" id="128">Cap to 128kbit</a></li>
+													<li><a href="#" id="256">Cap to 256kbit</a></li>
+													<li><a href="#" id="512">Cap to 512kbit</a></li>
+													<li><a href="#" id="1024">Cap to 1mbit</a></li>
+													<li><a href="#" id="1500">Cap to 1.5mbit</a></li>
+													<li><a href="#" id="2000">Cap to 2mbit</a></li>
+												</ul>
+											</div>
+										</div>
+									</h3>
+								</div>
+								<div class="panel-body" id="videoleft"></div>
+							</div>
+							<div class="input-group margin-bottom-sm">
+								<span class="input-group-addon"><i class="fa fa-cloud-upload fa-fw"></i></span>
+								<textarea rows="5" wrap="hard" class="form-control" type="text" placeholder="Write a DataChannel message" autocomplete="off" id="datasend" onkeypress="return checkEnter(event);" disabled></textarea>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">Remote Stream <span class="label label-primary" id="curres"></span> <span class="label label-info" id="curbitrate"></span><input type="checkbox" value="" id="togglerecord"> Record<br></h3>
+
+								</div>
+								<div class="panel-body" id="videoright"></div>
+							</div>
+							<div class="input-group margin-bottom-sm">
+								<span class="input-group-addon"><i class="fa fa-cloud-download fa-fw"></i></span>
+								<textarea rows="5" wrap="hard" class="form-control" type="text" id="datarecv" disabled></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<div class="container" id="head3">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="page-header">
+								<h2>Launch Skype &#8594; <button class="btn btn-success" autocomplete="off" id="skypeStart" onclick="init_skype();console.log('Initialized Skype')" style="float: right !important;position: absolute !important; right:10px !important;" align="right">Initialize Skype</button></h2>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="signinframe">
+
+								<div id="loginbox">
+									<div><h4>Login</h4>Tmele54@datasciencenewyork.onmicrosoft.com </div>
+									<div id="address" contenteditable="true" class="input form-control">Tmele54@datasciencenewyork.onmicrosoft.com</div>
+
+									<div><h4>Password</h4> Rutgers@54</div>
+									<input type="password" id="password" name="password" class="input form-control" value="Rutgers@54" />
+
+									<div id="signin" class="button">Sign-in</div>
+
+								</div>
+
+								<div id="everyone" class="button">Create Dashboard</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" id="showoffline"> Show offline contacts
+									</label>
+								</div>
+
+								<div id="status"></div>
+								<div id="results"></div>
+							</div>
+						</div>
+						<div class="col-md-6">
+
+							<div class="row">
+								<h4>Legend:</h4>
+							</div>
+							<div class="row">
+
+								<div class="col-md-6">
+									<p class="alert alert-success">Online</p>
+								</div>
+								<div class="col-md-6">
+									<p class="alert alert-warning">Away</p>
+								</div>
+
+							</div>
+							<div class="row">
+
+								<div class="col-md-6">
+									<p class="alert alert-danger">Busy</p>
+								</div>
+								<div class="col-md-6">
+									<p class="alert alert-info">Offline</p>
+								</div>
+
+							</div>
+
+							<div class="row" id="stuff"></div>
+							<div class="row">
+								<div class="col-md-12" id="updatelabel"></div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div id="logging_box" contenteditable="false" class="code"><b>Event Logs</b></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
