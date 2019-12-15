@@ -21,7 +21,13 @@ var LoginComponent = /** @class */ (function () {
         this.model = {};
         this.loading = false;
     }
+    LoginComponent.prototype.myHandler = function () {
+        $("#myVideo").fadeOut(1000);
+        $("#loginForm").fadeIn(3000);
+    };
     LoginComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        setTimeout(function () { return _this.myHandler(); }, 3000);
         // reset login status
         this.authenticationService.logout();
         // get return url from route parameters or default to '/'
@@ -43,10 +49,7 @@ var LoginComponent = /** @class */ (function () {
             moduleId: module.id,
             templateUrl: 'login.component.html'
         }),
-        __metadata("design:paramtypes", [router_1.ActivatedRoute,
-            router_1.Router,
-            index_1.AuthenticationService,
-            index_1.AlertService])
+        __metadata("design:paramtypes", [router_1.ActivatedRoute, router_1.Router, index_1.AuthenticationService, index_1.AlertService])
     ], LoginComponent);
     return LoginComponent;
 }());

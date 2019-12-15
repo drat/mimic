@@ -2,7 +2,7 @@
 import { User } from '../_models/index';
 import { UserService } from '../_services/index';
 import { ScriptService } from '../_services/index';
-import * as $ from "jquery";
+declare var $: any;
 
 @Component({
     moduleId: module.id,
@@ -15,13 +15,12 @@ export class PluginComponent implements OnInit {
 
     constructor(private userService: UserService, private script: ScriptService) {
         this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
-        /* Load external Scripts, method other then placement in index.html
-
-        this.script.load('janus', 'frames').then(data => {console.log('script loaded ', data);}).catch(error => console.log("ERROR FROM LOADER", error));
-
-        */
     }
 
+    refreshIframe() {
+        var ifr = document.getElementsByName('Right')[0];
+        //ifr.src = ifr.src;
+    }
     ngOnInit(){
         this.loadAllUsers();
     }

@@ -18,12 +18,11 @@ var PluginComponent = /** @class */ (function () {
         this.script = script;
         this.users = [];
         this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
-        /* Load external Scripts, method other then placement in index.html
-
-        this.script.load('janus', 'frames').then(data => {console.log('script loaded ', data);}).catch(error => console.log("ERROR FROM LOADER", error));
-
-        */
     }
+    PluginComponent.prototype.refreshIframe = function () {
+        var ifr = document.getElementsByName('Right')[0];
+        //ifr.src = ifr.src;
+    };
     PluginComponent.prototype.ngOnInit = function () {
         this.loadAllUsers();
     };

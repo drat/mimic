@@ -24,6 +24,7 @@
             '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
             '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
 
+
             // other libraries
             'rxjs': 'npm:rxjs',
             'tslib': 'npm:tslib/tslib.js'
