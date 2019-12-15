@@ -1,7 +1,4 @@
 
-
-
-
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
@@ -120,6 +117,9 @@ button {
 
 button:hover {
 	cursor: pointer;
+    -webkit-animation: glow 0.5s ease-in-out infinite alternate;
+    -moz-animation: glow 0.5s ease-in-out infinite alternate;
+    animation: glow 0.5s ease-in-out infinite alternate;
 }
 
 iframe {
@@ -187,8 +187,11 @@ iframe {
   background: -o-linear-gradient(bottom, #ea9257, #00c6fb);
   background: -moz-linear-gradient(bottom, #ea9257, #00c6fb);
   background: linear-gradient(bottom, #ea9257, #00c6fb);
-  opacity: 0.5;
+  opacity: 0.0;
 }
+
+
+
 
 .wrap-login100 {
   width: 390px;
@@ -212,11 +215,11 @@ iframe {
 
 .login100-form-title {
   font-family: Montserrat-ExtraBold;
-  font-size: 24px;
-  color: #fff;
+  font-size: 40px;
+  color: antiquewhite;
+  text-shadow: -2.5px 0 black, 0 2.5px black, 2.5px 0 black, 0 -2.5px black;
   line-height: 1.2;
   text-align: center;
-
   width: 100%;
   display: block;
 }
@@ -373,11 +376,12 @@ iframe {
   border-radius: 25px;
   top: 0;
   left: 0;
+  /*
   background: #ea9257;
   background: -webkit-linear-gradient(left, #ea9257, #00c6fb);
   background: -o-linear-gradient(left, #ea9257, #00c6fb);
   background: -moz-linear-gradient(left, #ea9257, #00c6fb);
-  background: linear-gradient(left, #ea9257, #00c6fb);
+  background: linear-gradient(left, #ea9257, #00c6fb);*/
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -386,8 +390,13 @@ iframe {
 }
 
 .login100-form-btn:hover {
-  background: transparent;
+
   color: #fff;
+
+  cursor: pointer;
+  -webkit-animation: glow-btn 1s ease-in-out infinite alternate;
+  -moz-animation: glow-btn 1s ease-in-out infinite alternate;
+  animation: glow-btn 1s ease-in-out infinite alternate;
 }
 
 .login100-form-btn:hover:before {
@@ -526,4 +535,58 @@ iframe {
     padding-left: 15px;
     padding-right: 15px;
   }
+}
+
+
+
+/*  GLOWING TEXT   */
+
+.glow {
+  font-size: 40px;
+  color: whitesmoke;
+  text-align: center;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #000de6, 0 0 40px #000de6;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #65cfff, 0 0 40px #65cfff;
+  }
+}
+
+
+.glow-btn {
+  font-size: 40px;
+  color: whitesmoke;
+  text-align: center;
+  -webkit-animation: glow-btn 1s ease-in-out infinite alternate;
+  -moz-animation: glow-btn 1s ease-in-out infinite alternate;
+  animation: glow-btn 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow-btn {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #000004;
+  }
+
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1f4958;
+  }
+}
+
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
 }

@@ -30,25 +30,25 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/app/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/app/assets/img" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="http.proxy" />
-    <property name="ts.external.directory.path" value="C:\Users\tonym\OneDrive\AAM_Portfolio\client_projects\MIMIC\WebApplication\client\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\tony\Documents\projects\mimic\WebApplication\client\node_modules\typescript\lib" />
     <property name="typescript-compiler-editor-notification" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tony\Documents\projects\mimic\WebApplication\client\app\assets\video" />
+      <recent name="C:\Users\tony\Documents\projects\mimic\WebApplication\client\app\assets" />
+      <recent name="C:\Users\tony\Documents\projects\mimic\WebApplication\client\app\video" />
       <recent name="C:\Users\tony\Documents\projects\mimic\WebApplication\client\app\assets\img" />
       <recent name="C:\Users\tony\Documents\projects\mimic\WebApplication\client\app\assets\js" />
-      <recent name="C:\Users\tony\Documents\projects\mimic\WebApplication\client\app\assets\fonts" />
-      <recent name="C:\Users\tony\Documents\projects\mimic\WebApplication\client\app\assets" />
-      <recent name="C:\Users\tony\Documents\projects\mimic\WebApplication\client\app\assets\css" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\tony\Documents\projects\mimic\WebApplication\client\app\assets" />
       <recent name="C:\Users\tony\Documents\projects\mimic\WebApplication\client\app\assets\img" />
+      <recent name="C:\Users\tony\Documents\projects\mimic\WebApplication\client\app\assets" />
       <recent name="C:\Users\tony\Documents\projects\mimic\WebApplication\client\app\assets\fonts" />
       <recent name="C:\Users\tony\Documents\projects\mimic\WebApplication\client\app\assets\temp" />
       <recent name="C:\Users\tony\Documents\projects\mimic\WebApplication\client\app\assets\remoteServer" />
@@ -76,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571166065339</updated>
-      <workItem from="1576334398906" duration="2060000" />
+      <workItem from="1576334398906" duration="9853000" />
     </task>
     <servers />
   </component>
@@ -156,6 +156,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="588" y="437" width="486" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576380698791">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="588" y="437" width="486" height="396" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1576380698791" />
     <state x="661" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1576334397975">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
