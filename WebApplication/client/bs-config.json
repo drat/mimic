@@ -1,4 +1,10 @@
 {
   "server": { "baseDir": "./" },
-   "open": false
+  "open": false,
+  "port": 8154,
+  "notify": false,
+  "https": {
+    "key": "C:\\Users\\tony\\Documents\\projects\\HTTPSforProjects\\client-1.local.key",
+    "cert": "C:\\Users\\tony\\Documents\\projects\\HTTPSforProjects\\client-1.local.crt"
+  }
 }

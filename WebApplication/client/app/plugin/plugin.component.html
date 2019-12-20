@@ -73,7 +73,7 @@
 
 
 											<!--<button class="btn btn-success" autocomplete="off" id="startEcho" onclick="hello()" style="float: right !important;position: absolute !important; right:10px !important;" align="right">Initialize AI Animation</button>-->
-											<button class="btn btn-success" autocomplete="off" id="start" onclick="refreshIframe();start()" style="float: right !important;position: absolute !important; right:10px !important;" align="right">Refresh AI - Initialize AI Animation</button>
+											<button class="btn btn-success" autocomplete="off" id="start" onclick="refreshIframe();" style="float: right !important;position: absolute !important; right:10px !important;" align="right">Refresh AI - Initialize AI Animation</button>
 											<button class="btn btn-danger"  autocomplete="off" id="stop"  onclick="stop()"  style="float: right !important;position: absolute !important; right:10px !important;visibility: hidden" align="right">Stop</button>
 
 
@@ -97,12 +97,13 @@
 							</div>
 						</div>
 						-->
+						<!--
 						<div class="container" id="temporary">
 							<div class="row">
 								<div class="col-md-12">
 
 									<iframe src="https://18.235.63.230:8080/" width="100%" height="750px" frameborder="0"
-										allow="geolocation; microphone; camera https://18.235.63.230;" name="Right">
+										allow="geolocation; microphone; camera https://18.235.63.230:8080/;" name="Right">
 									  <p>
 										<a href="https://18.235.63.230:8080/">
 										   Fallback link for browsers that don't support iframes
@@ -112,34 +113,22 @@
 								</div>
 							</div>
 						</div>
+						-->
 						<div class="container" id="videos">
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-md-12">
 									<div class="panel panel-default">
 										<div class="panel-heading">
-											<h3 class="panel-title">Local Stream
-																									<!--
-												<div class="btn-group btn-group-xs pull-right">
-													<button class="btn btn-danger" autocomplete="off" id="toggleaudio">Disable audio</button>
-													<button class="btn btn-danger" autocomplete="off" id="togglevideo">Disable video</button>
+											<h3 class="panel-title">Local Stream</h3>
+											<iframe src="https://18.235.63.230:8080/" width="100%" height="750px" frameborder="0" id="iFrameServer"
+												allow="geolocation; microphone; camera https://18.235.63.230:8080/;" name="Right">
+											  <p>
+												<a href="https://18.235.63.230:8080/">
+												   Fallback link for browsers that don't support iframes
+												</a>
+											  </p>
+											</iframe>
 
-													<div class="btn-group btn-group-xs">
-														<button id="bitrateset" autocomplete="off" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-															Bandwidth<span class="caret"></span>
-														</button>
-														<ul id="bitrate" class="dropdown-menu" role="menu">
-															<li><a href="#" id="0">No limit</a></li>
-															<li><a href="#" id="128">Cap to 128kbit</a></li>
-															<li><a href="#" id="256">Cap to 256kbit</a></li>
-															<li><a href="#" id="512">Cap to 512kbit</a></li>
-															<li><a href="#" id="1024">Cap to 1mbit</a></li>
-															<li><a href="#" id="1500">Cap to 1.5mbit</a></li>
-															<li><a href="#" id="2000">Cap to 2mbit</a></li>
-														</ul>
-													</div>
-												</div>
-												-->
-											</h3>
 										</div>
 										<div class="panel-body" id="videoleft"></div>
 									</div>
@@ -150,25 +139,27 @@
 									</div>
 									-->
 								</div>
+								<!--
 								<div class="col-md-6">
 									<div class="panel panel-default">
 										<div class="panel-heading">
 											<h3 class="panel-title">Remote Stream
-																									<!--
+
 												<span class="label label-primary" id="curres"></span> <span class="label label-info" id="curbitrate"></span><input type="checkbox" value="" id="togglerecord"> Record<br>
-												-->
+
 											</h3>
 
 										</div>
 										<div class="panel-body" id="videoright"></div>
 									</div>
-																									<!--
+
 									<div class="input-group margin-bottom-sm">
 										<span class="input-group-addon"><i class="fa fa-cloud-download fa-fw"></i></span>
 										<textarea rows="5" wrap="hard" class="form-control" type="text" id="datarecv" disabled></textarea>
 									</div>
-									-->
 								</div>
+
+								-->
 							</div>
 						</div>
 

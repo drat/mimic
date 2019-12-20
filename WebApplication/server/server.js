@@ -1,6 +1,8 @@
 ﻿require('rootpath')();
 var express = require('express');
 var app = express();
+const https = require('https');
+const fs = require('fs');
 var cors = require('cors');
 var bodyParser = require('body-parser');
 var expressJwt = require('express-jwt');
@@ -35,8 +37,16 @@ app.use(function (err, req, res, next) {
     }
 });
 
-// start server
+// start server (NOT HTTPS)
 var port = process.env.NODE_ENV === 'production' ? 80 : 4000;
-var server = app.listen(port, function () {
-    console.log('Server listening on port ' + port);
-});
+//var server = app.listen(port, function () { console.log('Server listening on port ' + port); });
+
+
+
+// we will pass our 'app' to 'https' server (HTTPS)
+https.createServer({
+    key: fs.readFileSync('C:\\Users\\tony\\Documents\\projects\\HTTPSforProjects\\client-1.local.key'),
+    cert: fs.readFileSync('C:\\Users\\tony\\Documents\\projects\\HTTPSforProjects\\client-1.local.crt'),
+    passphrase: 'tony'
+}, app)
+.listen(port);
