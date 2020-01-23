@@ -2,6 +2,8 @@
 import { User } from '../_models/index';
 import { UserService } from '../_services/index';
 import { ScriptService } from '../_services/index';
+
+
 declare var $: any;
 
 @Component({
@@ -12,7 +14,6 @@ declare var $: any;
 export class PluginComponent implements OnInit {
     currentUser: User;
     users: User[] = [];
-
     constructor(private userService: UserService, private script: ScriptService) {
         this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
     }
@@ -24,7 +25,6 @@ export class PluginComponent implements OnInit {
     ngOnInit(){
         this.loadAllUsers();
     }
-
     private loadAllUsers(){
         this.userService.getAll().subscribe(users => { this.users = users; });
     }

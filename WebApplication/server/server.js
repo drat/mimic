@@ -8,6 +8,14 @@ var bodyParser = require('body-parser');
 var expressJwt = require('express-jwt');
 var config = require('config.json');
 
+
+//const TelegramBot = require('node-telegram-bot-api');
+//const token = '921969059:AAHEsjXkp10M3JOZyhiRoODIyWFpQ_dCUYs';
+//const bot = new TelegramBot(token, {polling: true});
+//c/onst chatId = '941853127';
+//bot.sendVideo(chatId, '../client/app/assets/video/video.mp4')
+
+
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());

@@ -17,6 +17,7 @@
         "mongodb": "^2.1.16",
         "mongoose": "^5.7.5",
         "mongoskin": "^2.1.0",
+        "node-telegram-bot-api": "^0.40.0",
         "q": "^1.4.1",
         "request": "^2.87.0",
         "rootpath": "^0.1.2"

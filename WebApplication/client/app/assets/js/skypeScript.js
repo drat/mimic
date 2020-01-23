@@ -19,6 +19,7 @@ var bs_footer = ''; //'</div></div>';
 /*
    Presence Dashboard Example for the Skype Web SDK
 */
+
 function init_skype(){
     log("App Loaded");
 
@@ -27,6 +28,7 @@ function init_skype(){
 
     Skype.initialize({
         apiKey: 'a42fcebd-5b43-4b89-a065-74450fb91255',// 'SWX-BUILD-SDK',
+        apiKeyCC: '9c967f6b-a846-4df2-b43d-5167e47d81e1'
     }, function (api) {
         Application = api.application;
         client = new Application();
